@@ -1,0 +1,70 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+{% block title %}Dashboards | Projeto CAAFE{% endblock %}
+{% block heading %}Indicadores visuais de insegurança alimentar{% endblock %}
+
+{% block content %}
+<section class="section-heading">
+    <div>
+        <span class="section-kicker">VISUALIZAÇÃO ANALÍTICA</span>
+        <h2>Resultados centrais do estudo</h2>
+        <p>Gráficos interativos recalculados a partir da base analítica armazenada em cache.</p>
+    </div>
+    <span class="method-badge">Plotly interativo</span>
+</section>
+
+<div class="dashboard-grid">
+    <article class="content-card chart-card chart-card-wide">
+        <header class="card-header chart-header">
+            <div>
+                <span class="card-overline">MODELO AJUSTADO</span>
+                <h3>Razões de prevalência ajustadas</h3>
+                <p>Alguma insegurança alimentar · regressão de Poisson com variância robusta.</p>
+            </div>
+            <span class="chart-pill">RP = 1: ausência de diferença</span>
+        </header>
+        <div id="forest-chart" class="chart" role="img" aria-label="Gráfico de razões de prevalência ajustadas"></div>
+        <footer class="chart-footer">
+            <span class="chart-footer-dot accent"></span>
+            <p>Estimativas cujo intervalo não cruza a unidade indicam associação estatisticamente compatível com diferença de prevalência.</p>
+        </footer>
+    </article>
+
+    <article class="content-card chart-card">
+        <header class="card-header chart-header">
+            <div>
+                <span class="card-overline">GRADIENTE SOCIOECONÔMICO</span>
+                <h3>Prevalência segundo renda familiar</h3>
+                <p>Barras com intervalos de confiança de 95%.</p>
+            </div>
+        </header>
+        <div id="income-chart" class="chart chart-medium" role="img" aria-label="Prevalência segundo renda familiar mensal"></div>
+        <footer class="chart-footer">
+            <span class="chart-footer-dot primary"></span>
+            <p>Quanto menor a renda, maior a prevalência observada de alguma insegurança alimentar.</p>
+        </footer>
+    </article>
+
+    <article class="content-card chart-card">
+        <header class="card-header chart-header">
+            <div>
+                <span class="card-overline">CLASSIFICAÇÃO OPERACIONAL</span>
+                <h3>Distribuição dos níveis de insegurança</h3>
+                <p>Sem insegurança, algum risco e risco moderado/grave.</p>
+            </div>
+        </header>
+        <div id="level-chart" class="chart chart-medium" role="img" aria-label="Distribuição do indicador operacional de insegurança alimentar"></div>
+        <footer class="chart-footer">
+            <span class="chart-footer-dot secondary"></span>
+            <p>O nível moderado/grave representa respostas positivas às duas perguntas do rastreamento.</p>
+        </footer>
+    </article>
+</div>
+
+<script id="chart-data" type="application/json">{{ chart_json|safe }}</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script src="{% static 'dashboard/js/charts.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,144 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c6f4c">
+    <title>{% block title %}Projeto CAAFE | Insegurança Alimentar{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}">
+    <link rel="stylesheet" href="{% static 'dashboard/css/app.css' %}">
+    <script defer src="{% static 'dashboard/js/app.js' %}"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+<div class="app-layout">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+        <div class="sidebar-brand">
+            <div class="brand-logo-wrap">
+                <img class="brand-logo" src="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}" alt="Logotipo do Projeto de Pesquisa">
+            </div>
+            <div class="brand-copy">
+                <strong>Projeto CAAFE</strong>
+                <span>Saúde alimentar escolar</span>
+            </div>
+            <button class="sidebar-close" type="button" data-sidebar-close aria-label="Fechar menu">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+
+        <div class="sidebar-context">
+            <span class="context-dot" aria-hidden="true"></span>
+            <div>
+                <small>Painel epidemiológico</small>
+                <strong>Insegurança alimentar</strong>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a class="nav-item" href="{% url 'institutional:home' %}">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v9a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>
+                <span>Início</span>
+            </a>
+            <a class="nav-item {% if active == 'tables' %}active{% endif %}" href="{% url 'tables' %}" {% if active == 'tables' %}aria-current="page"{% endif %}>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16M8 3v18"/></svg>
+                <span>Tabelas</span>
+            </a>
+            <a class="nav-item {% if active == 'dashboards' %}active{% endif %}" href="{% url 'dashboards' %}" {% if active == 'dashboards' %}aria-current="page"{% endif %}>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m6 10V5m6 14v-7m4 7H2"/></svg>
+                <span>Dashboards</span>
+            </a>
+            <a class="nav-item {% if active == 'map' %}active{% endif %}" href="{% url 'map' %}" {% if active == 'map' %}aria-current="page"{% endif %}>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Zm0 0V3m6 18V6"/></svg>
+                <span>Mapa</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-method">
+            <span class="method-icon" aria-hidden="true">i</span>
+            <p>Indicador operacional baseado em duas perguntas domiciliares. Não equivale à EBIA completa.</p>
+        </div>
+
+        <div class="sidebar-footer">
+            <span>Base CAAFE</span>
+            <small>MVP 1.1 · resultados agregados</small>
+        </div>
+    </aside>
+
+    <div class="sidebar-overlay" data-sidebar-overlay></div>
+
+    <div class="workspace">
+        <header class="mobile-header">
+            <button class="menu-button" type="button" data-sidebar-open aria-controls="sidebar" aria-expanded="false" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="mobile-brand">
+                <img src="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}" alt="">
+                <strong>Projeto CAAFE</strong>
+            </div>
+            <span class="mobile-status" title="Dados carregados"></span>
+        </header>
+
+        <main class="main-content" id="conteudo-principal">
+            <section class="page-hero">
+                <div class="hero-copy">
+                    <div class="eyebrow-row">
+                        <span class="eyebrow">VIGILÂNCIA EM SAÚDE ALIMENTAR</span>
+                        <span class="data-status"><i></i> Base carregada</span>
+                    </div>
+                    <h1>{% block heading %}Insegurança alimentar entre escolares{% endblock %}</h1>
+                    <p>Panorama analítico da prevalência e dos fatores sociodemográficos associados entre escolares participantes da Base CAAFE.</p>
+                </div>
+                <div class="source-card" title="Identificador da versão atual da fonte">
+                    <span>Fonte dos dados</span>
+                    <strong>{{ data.source.type|capfirst }}</strong>
+                    <small>Hash {{ data.source.hash }}</small>
+                </div>
+            </section>
+
+            <section class="kpi-grid" aria-label="Principais indicadores">
+                <article class="kpi-card kpi-neutral">
+                    <div class="kpi-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m7-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm13 10v-2a4 4 0 0 0-3-3.87m-1-12a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div><span>Registros válidos</span><strong>{{ data.summary.valid_n }}</strong><small>com desfecho classificado</small></div>
+                </article>
+                <article class="kpi-card kpi-primary">
+                    <div class="kpi-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 16l4-5 4 3 5-8"/></svg>
+                    </div>
+                    <div><span>Alguma insegurança</span><strong>{{ data.summary.prevalence_fmt }}</strong><small>IC95% {{ data.summary.ci_fmt }}</small></div>
+                </article>
+                <article class="kpi-card kpi-alert">
+                    <div class="kpi-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M12 9v4m0 4h.01M10.3 3.7 2.4 17.4A2 2 0 0 0 4.1 20h15.8a2 2 0 0 0 1.7-2.6L13.7 3.7a2 2 0 0 0-3.4 0Z"/></svg>
+                    </div>
+                    <div><span>Moderada/grave</span><strong>{{ data.summary.moderate_severe_fmt }}</strong><small>n={{ data.summary.moderate_severe_n }}</small></div>
+                </article>
+                <article class="kpi-card kpi-secondary">
+                    <div class="kpi-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 16v-4m4 4V8m4 8v-6"/></svg>
+                    </div>
+                    <div><span>Modelo ajustado</span><strong>{{ data.summary.model_n }}</strong><small>casos completos</small></div>
+                </article>
+            </section>
+
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer class="app-footer">
+            <span>Projeto CAAFE · Painel de indicadores alimentares</span>
+            <small>Uso analítico e resultados agregados</small>
+        </footer>
+    </div>
+</div>
+
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,69 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Mapa | Projeto CAAFE{% endblock %}
+{% block heading %}Distribuição territorial por escola{% endblock %}
+
+{% block content %}
+<section class="section-heading">
+    <div>
+        <span class="section-kicker">ANÁLISE TERRITORIAL</span>
+        <h2>Prevalência agregada nas escolas participantes</h2>
+        <p>Os marcadores combinam magnitude da prevalência, tamanho da amostra e indicadores sociais de cada unidade escolar.</p>
+    </div>
+    <span class="method-badge">Folium + OpenStreetMap</span>
+</section>
+
+<div class="map-grid">
+    <article class="content-card map-card">
+        <header class="card-header map-card-header">
+            <div>
+                <span class="card-overline">GEOLOCALIZAÇÃO</span>
+                <h3>Mapa das escolas</h3>
+            </div>
+            <div class="map-legend-inline" aria-label="Legenda do mapa">
+                <span><i class="risk-low"></i> &lt;40%</span>
+                <span><i class="risk-medium"></i> 40–59,9%</span>
+                <span><i class="risk-high"></i> ≥60%</span>
+            </div>
+        </header>
+        <div class="map-frame">{{ map_html|safe }}</div>
+    </article>
+
+    <aside class="map-sidebar">
+        <article class="content-card map-info-card">
+            <span class="card-overline">LEITURA EPIDEMIOLÓGICA</span>
+            <h3>Como interpretar o mapa</h3>
+            <p>A cor representa a prevalência de alguma insegurança alimentar. O tamanho do marcador acompanha o número de registros válidos da escola.</p>
+            <ul class="map-metric-list">
+                <li><span>Alguma insegurança</span><strong>Prevalência + IC95%</strong></li>
+                <li><span>Gravidade</span><strong>Moderada/grave</strong></li>
+                <li><span>Vulnerabilidade</span><strong>Renda e escolaridade</strong></li>
+                <li><span>Perfil</span><strong>Raça/cor e idade</strong></li>
+            </ul>
+        </article>
+
+        <div class="warning-card">
+            <div class="warning-symbol" aria-hidden="true">!</div>
+            <div><strong>Coordenadas provisórias</strong><p>Valide a latitude e a longitude das escolas antes da publicação institucional.</p></div>
+        </div>
+
+        <article class="content-card school-ranking-card">
+            <header class="ranking-header">
+                <div><span class="card-overline">RESUMO POR UNIDADE</span><h3>Escolas participantes</h3></div>
+                <span>{{ school_rows|length }}</span>
+            </header>
+            <div class="school-ranking">
+                {% for row in school_rows %}
+                <div class="school-ranking-item">
+                    <div class="school-ranking-top">
+                        <strong>{{ row.school_name }}</strong>
+                        <span>{{ row.prevalence|floatformat:1 }}%</span>
+                    </div>
+                    <div class="school-progress" aria-hidden="true"><i style="--school-prevalence: {{ row.prevalence|floatformat:1 }}%;"></i></div>
+                    <small>n válido: {{ row.n_valid|default:0 }}</small>
+                </div>
+                {% endfor %}
+            </div>
+        </article>
+    </aside>
+</div>
+{% endblock %}

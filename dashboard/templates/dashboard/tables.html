@@ -1,0 +1,115 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Tabelas | Projeto CAAFE{% endblock %}
+{% block heading %}Panorama da insegurança alimentar{% endblock %}
+
+{% block content %}
+<section class="section-heading">
+    <div>
+        <span class="section-kicker">DESCRIÇÃO SOCIODEMOGRÁFICA</span>
+        <h2>Prevalência segundo características dos escolares</h2>
+        <p>Denominadores válidos, casos classificados, prevalências e intervalos de confiança de 95% pelo método de Wilson.</p>
+    </div>
+    <span class="method-badge">IC95% de Wilson</span>
+</section>
+
+<div class="table-card-grid">
+    {% for key,table in data.tables.items %}
+    <article class="content-card table-card">
+        <header class="card-header">
+            <div>
+                <span class="card-overline">ESTRATIFICAÇÃO</span>
+                <h3>{{ table.title }}</h3>
+            </div>
+            <span class="card-count">{{ table.rows|length }} categorias</span>
+        </header>
+        <div class="table-scroll">
+            <table class="data-table compact-table">
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th class="numeric">N</th>
+                        <th class="numeric">Com IA</th>
+                        <th>Prevalência</th>
+                        <th>IC95%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in table.rows %}
+                    <tr>
+                        <td class="category-cell">{{ row.category }}</td>
+                        <td class="numeric">{{ row.n }}</td>
+                        <td class="numeric">{{ row.cases }}</td>
+                        <td class="prevalence-cell">
+                            <div class="prevalence-value"><strong>{{ row.prevalence_fmt }}</strong></div>
+                            <div class="prevalence-track" aria-hidden="true">
+                                <span style="--prevalence-width: {{ row.prevalence|floatformat:1 }}%;"></span>
+                            </div>
+                        </td>
+                        <td class="ci-cell">{{ row.ci_fmt }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </article>
+    {% endfor %}
+</div>
+
+<section class="section-heading section-heading-spaced">
+    <div>
+        <span class="section-kicker">MODELO EPIDEMIOLÓGICO</span>
+        <h2>Razões de prevalência brutas e ajustadas</h2>
+        <p>Regressão de Poisson com ligação log, variância robusta e efeito fixo de escola.</p>
+    </div>
+    <span class="method-badge method-badge-accent">Poisson robusto</span>
+</section>
+
+<article class="content-card regression-card">
+    <header class="card-header regression-header">
+        <div>
+            <span class="card-overline">DESFECHO PRINCIPAL</span>
+            <h3>Razões de prevalência de alguma insegurança alimentar</h3>
+        </div>
+        <div class="legend-inline">
+            <span><i class="legend-reference"></i> Referência</span>
+            <span><i class="legend-estimate"></i> Estimativa</span>
+        </div>
+    </header>
+    <div class="table-scroll regression-scroll">
+        <table class="data-table regression-table">
+            <thead>
+                <tr>
+                    <th>Variável</th>
+                    <th>Categoria</th>
+                    <th class="numeric">RP bruta</th>
+                    <th>IC95%</th>
+                    <th class="numeric">RP ajustada</th>
+                    <th>IC95%</th>
+                    <th class="numeric">p</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data.associations %}
+                <tr class="{% if row.reference %}reference-row{% endif %}">
+                    <td class="variable-cell">{{ row.variable }}</td>
+                    <td>{{ row.category }}</td>
+                    <td class="numeric">{{ row.crude_rp_fmt }}</td>
+                    <td>{{ row.crude_ci_fmt }}</td>
+                    <td class="numeric adjusted-value">{{ row.adjusted_rp_fmt }}</td>
+                    <td>{{ row.adjusted_ci_fmt }}</td>
+                    <td class="numeric">{{ row.p_fmt }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</article>
+
+<div class="interpretation-card">
+    <div class="interpretation-icon" aria-hidden="true">RP</div>
+    <div>
+        <strong>Como interpretar</strong>
+        <p>RP acima de 1 indica prevalência maior que a categoria de referência. A leitura deve considerar simultaneamente magnitude, intervalo de confiança, valor de p e plausibilidade epidemiológica.</p>
+    </div>
+</div>
+{% endblock %}

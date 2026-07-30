@@ -1,0 +1,13 @@
+Django>=5.2,<5.3
+pandas>=2.2,<3
+numpy>=2.0,<3
+pyarrow>=18,<22
+statsmodels>=0.14,<0.15
+folium>=0.20,<0.21
+branca>=0.8,<0.9
+supabase>=2.15,<3
+gunicorn>=23,<24
+whitenoise>=6.8,<7
+python-dotenv>=1.0,<2
+dj-database-url>=2.3,<3
+psycopg[binary]>=3.2,<4

@@ -1,0 +1,178 @@
+[
+  {
+    "path": ".env.example",
+    "bytes": 622
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 118
+  },
+  {
+    "path": "MANIFEST.json",
+    "bytes": 4921
+  },
+  {
+    "path": "README.md",
+    "bytes": 2685
+  },
+  {
+    "path": "build.sh",
+    "bytes": 172
+  },
+  {
+    "path": "config/__init__.py",
+    "bytes": 0
+  },
+  {
+    "path": "config/asgi.py",
+    "bytes": 164
+  },
+  {
+    "path": "config/settings.py",
+    "bytes": 3614
+  },
+  {
+    "path": "config/urls.py",
+    "bytes": 156
+  },
+  {
+    "path": "config/wsgi.py",
+    "bytes": 164
+  },
+  {
+    "path": "dashboard/__init__.py",
+    "bytes": 0
+  },
+  {
+    "path": "dashboard/apps.py",
+    "bytes": 148
+  },
+  {
+    "path": "dashboard/management/__init__.py",
+    "bytes": 0
+  },
+  {
+    "path": "dashboard/management/commands/__init__.py",
+    "bytes": 0
+  },
+  {
+    "path": "dashboard/management/commands/refresh_data.py",
+    "bytes": 499
+  },
+  {
+    "path": "dashboard/management/commands/validate_baseline.py",
+    "bytes": 888
+  },
+  {
+    "path": "dashboard/services/__init__.py",
+    "bytes": 0
+  },
+  {
+    "path": "dashboard/services/analytics.py",
+    "bytes": 9006
+  },
+  {
+    "path": "dashboard/services/data_source.py",
+    "bytes": 3759
+  },
+  {
+    "path": "dashboard/services/map_service.py",
+    "bytes": 2784
+  },
+  {
+    "path": "dashboard/static/dashboard/css/app.css",
+    "bytes": 4316
+  },
+  {
+    "path": "dashboard/static/dashboard/js/charts.js",
+    "bytes": 2110
+  },
+  {
+    "path": "dashboard/templates/dashboard/base.html",
+    "bytes": 2244
+  },
+  {
+    "path": "dashboard/templates/dashboard/dashboards.html",
+    "bytes": 1280
+  },
+  {
+    "path": "dashboard/templates/dashboard/map.html",
+    "bytes": 957
+  },
+  {
+    "path": "dashboard/templates/dashboard/tables.html",
+    "bytes": 1807
+  },
+  {
+    "path": "dashboard/tests/__init__.py",
+    "bytes": 0
+  },
+  {
+    "path": "dashboard/tests/test_analytics.py",
+    "bytes": 291
+  },
+  {
+    "path": "dashboard/urls.py",
+    "bytes": 432
+  },
+  {
+    "path": "dashboard/views.py",
+    "bytes": 1555
+  },
+  {
+    "path": "data/baseline_metrics.json",
+    "bytes": 2823
+  },
+  {
+    "path": "data/caafe_dashboard.csv",
+    "bytes": 63328
+  },
+  {
+    "path": "data/cache/.gitkeep",
+    "bytes": 0
+  },
+  {
+    "path": "data/school_locations.csv",
+    "bytes": 1203
+  },
+  {
+    "path": "docs/architecture.md",
+    "bytes": 655
+  },
+  {
+    "path": "docs/data_dictionary.md",
+    "bytes": 883
+  },
+  {
+    "path": "docs/distribuicao_referencia.png",
+    "bytes": 31677
+  },
+  {
+    "path": "docs/forest_referencia.png",
+    "bytes": 66582
+  },
+  {
+    "path": "docs/renda_referencia.png",
+    "bytes": 33595
+  },
+  {
+    "path": "docs/security.md",
+    "bytes": 399
+  },
+  {
+    "path": "manage.py",
+    "bytes": 240
+  },
+  {
+    "path": "render.yaml",
+    "bytes": 933
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 246
+  },
+  {
+    "path": "scripts/export_dashboard_csv.py",
+    "bytes": 821
+  }
+]

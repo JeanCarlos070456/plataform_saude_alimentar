@@ -1,0 +1,483 @@
+record_id,school_code,school_name,school_inep,sex,age_years,age_group,shift,mother_education,income_group,race_group,insecurity_level,any_insecurity,moderate_severe,social_benefit_raw
+R0001,7,Centro Educacional São José,53011988,Masculino,11.573,10–11 anos,Matutino,≥12 anos,,Pardos/pretos,,,,
+R0002,2,CED São Bartolomeu,53014880,Feminino,11.863,10–11 anos,Vespertino,9–11 anos,,Pardos/pretos,,,,
+R0003,1,Escola Classe Dom Bosco,53068220,Masculino,10.031,10–11 anos,Vespertino,,,,,,,
+R0004,5,Escola Classe São Bartolomeu,53012178,Masculino,8.353,7–9 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0005,2,CED São Bartolomeu,53014880,Feminino,11.42,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0006,,,,Masculino,11.0,10–11 anos,Vespertino,,,,,,,
+R0007,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.148,7–9 anos,Matutino,9–11 anos,,Pardos/pretos,,,,
+R0008,1,Escola Classe Dom Bosco,53068220,Masculino,11.362,10–11 anos,Matutino,,,,,,,
+R0009,,,,Masculino,12.0,12–14 anos,Matutino,,,,,,,
+R0010,2,CED São Bartolomeu,53014880,Masculino,15.28,15–17 anos,Matutino,,,,,,,
+R0011,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.0,10–11 anos,Vespertino,≥12 anos,,Pardos/pretos,,,,
+R0012,1,Escola Classe Dom Bosco,53068220,Masculino,10.146,10–11 anos,Vespertino,,,,,,,
+R0013,,,,Feminino,15.0,15–17 anos,Matutino,,,,,,,
+R0014,1,Escola Classe Dom Bosco,53068220,Masculino,10.502,10–11 anos,Matutino,,,,,,,
+R0015,5,Escola Classe São Bartolomeu,53012178,Masculino,9.131,7–9 anos,Matutino,,,,,,,
+R0016,,,,Feminino,9.0,7–9 anos,Matutino,,,,,,,
+R0017,1,Escola Classe Dom Bosco,53068220,Feminino,10.053,10–11 anos,Matutino,,,,,,,
+R0018,1,Escola Classe Dom Bosco,53068220,Masculino,8.969,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0019,2,CED São Bartolomeu,53014880,Masculino,13.996,12–14 anos,Matutino,,,,,,,
+R0020,1,Escola Classe Dom Bosco,53068220,Feminino,9.703,7–9 anos,Matutino,,,,,,,
+R0021,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.141,10–11 anos,Vespertino,,,,,,,
+R0022,2,CED São Bartolomeu,53014880,Feminino,15.118,15–17 anos,Matutino,9–11 anos,,Pardos/pretos,,,,
+R0023,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,10.0,10–11 anos,Vespertino,≥12 anos,,Pardos/pretos,,,,
+R0024,5,Escola Classe São Bartolomeu,53012178,Feminino,9.621,7–9 anos,Matutino,,,,,,,
+R0025,1,Escola Classe Dom Bosco,53068220,Masculino,11.198,10–11 anos,Vespertino,,,,,,,
+R0026,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.986,7–9 anos,Matutino,,,,,,,
+R0027,,,,Feminino,13.0,12–14 anos,Vespertino,,,,,,,
+R0028,,,,Feminino,10.0,10–11 anos,Vespertino,,,,,,,
+R0029,5,Escola Classe São Bartolomeu,53012178,Masculino,8.594,7–9 anos,Matutino,,,,,,,
+R0030,,,,Feminino,8.0,7–9 anos,Matutino,,,,,,,
+R0031,,,,Feminino,14.0,12–14 anos,Matutino,,,,,,,
+R0032,5,Escola Classe São Bartolomeu,53012178,Masculino,8.331,7–9 anos,Vespertino,9–11 anos,,Pardos/pretos,,,,
+R0033,1,Escola Classe Dom Bosco,53068220,Masculino,10.861,10–11 anos,Vespertino,,,,,,,
+R0034,1,Escola Classe Dom Bosco,53068220,Masculino,8.301,7–9 anos,Vespertino,,,,,,,
+R0035,,,,Masculino,12.0,12–14 anos,Vespertino,,,,,,,
+R0036,5,Escola Classe São Bartolomeu,53012178,Masculino,7.762,7–9 anos,Vespertino,,,,,,,
+R0037,,,,Feminino,7.0,7–9 anos,Matutino,,,,,,,
+R0038,,,,Masculino,8.0,7–9 anos,Vespertino,,,,,,,
+R0039,7,Centro Educacional São José,53011988,Masculino,11.567,10–11 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0040,2,CED São Bartolomeu,53014880,Feminino,13.374,12–14 anos,Vespertino,9–11 anos,,Brancos,,,,
+R0041,5,Escola Classe São Bartolomeu,53012178,Feminino,7.693,7–9 anos,Vespertino,,,,,,,
+R0042,1,Escola Classe Dom Bosco,53068220,Masculino,9.574,7–9 anos,Vespertino,,,,,,,
+R0043,2,CED São Bartolomeu,53014880,Feminino,13.588,12–14 anos,Matutino,,,,,,,
+R0044,2,CED São Bartolomeu,53014880,Masculino,13.366,12–14 anos,Vespertino,Não soube informar,,,,,,
+R0045,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,10.576,10–11 anos,Vespertino,≥12 anos,,Pardos/pretos,,,,
+R0046,,,,Feminino,11.0,10–11 anos,Vespertino,,,,,,,
+R0047,,,,Feminino,11.0,10–11 anos,Vespertino,,,,,,,
+R0048,1,Escola Classe Dom Bosco,53068220,Masculino,10.519,10–11 anos,Matutino,,,,,,,
+R0049,2,CED São Bartolomeu,53014880,Masculino,12.159,12–14 anos,Vespertino,,,,,,,
+R0050,,,,Feminino,14.0,12–14 anos,Matutino,,,,,,,
+R0051,,,,Feminino,13.0,12–14 anos,Vespertino,,,,,,,
+R0052,1,Escola Classe Dom Bosco,53068220,Masculino,12.189,12–14 anos,Vespertino,,,,,,,
+R0053,1,Escola Classe Dom Bosco,53068220,Masculino,11.362,10–11 anos,Vespertino,,,,,,,
+R0054,,,,Feminino,10.0,10–11 anos,Matutino,,,,,,,
+R0055,1,Escola Classe Dom Bosco,53068220,Feminino,11.088,10–11 anos,Matutino,,,,,,,
+R0056,1,Escola Classe Dom Bosco,53068220,Feminino,10.47,10–11 anos,Matutino,,,,,,,
+R0057,1,Escola Classe Dom Bosco,53068220,Masculino,9.254,7–9 anos,Matutino,,,,,,,
+R0058,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.707,7–9 anos,Matutino,,,,,,,
+R0059,,,,Feminino,9.0,7–9 anos,Vespertino,,,,,,,
+R0060,,,,Masculino,10.0,10–11 anos,Matutino,,,,,,,
+R0061,1,Escola Classe Dom Bosco,53068220,Masculino,10.836,10–11 anos,Vespertino,,,,,,,
+R0062,1,Escola Classe Dom Bosco,53068220,Masculino,11.244,10–11 anos,Matutino,,,,,,,
+R0063,1,Escola Classe Dom Bosco,53068220,Feminino,10.368,10–11 anos,Matutino,,,,,,,
+R0064,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,7.507,7–9 anos,Matutino,,,,,,,
+R0065,,,,Feminino,10.0,10–11 anos,Matutino,,,,,,,
+R0066,1,Escola Classe Dom Bosco,53068220,Masculino,11.151,10–11 anos,Matutino,,,,,,,
+R0067,4,CEF Miguel Arcanjo,53068211,Feminino,12.268,12–14 anos,Vespertino,,,,,,,
+R0068,2,CED São Bartolomeu,53014880,Feminino,15.0,15–17 anos,Matutino,≥12 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0069,1,Escola Classe Dom Bosco,53068220,Feminino,10.333,10–11 anos,Matutino,,,,,,,
+R0070,4,CEF Miguel Arcanjo,53068211,Masculino,14.366,12–14 anos,Matutino,,,,,,,
+R0071,,,,Feminino,16.0,15–17 anos,Matutino,,,,,,,
+R0072,1,Escola Classe Dom Bosco,53068220,Feminino,10.472,10–11 anos,Vespertino,,,,,,,
+R0073,1,Escola Classe Dom Bosco,53068220,Masculino,10.305,10–11 anos,Matutino,0–8 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0074,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.593,10–11 anos,Vespertino,,Até 1 SM,Brancos,Algum risco,1,0,
+R0075,1,Escola Classe Dom Bosco,53068220,Masculino,8.438,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0076,1,Escola Classe Dom Bosco,53068220,Feminino,9.741,7–9 anos,Matutino,0–8 anos,,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0077,7,Centro Educacional São José,53011988,Feminino,14.292,12–14 anos,Vespertino,Não soube informar,>2 SM,Brancos,Sem insegurança,0,0,1.0
+R0078,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,10.0,10–11 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0079,6,Escola Classe 104 de São Sebastião,53013484,Masculino,9.979,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0080,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,9.352,7–9 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0081,5,Escola Classe São Bartolomeu,53012178,Feminino,7.693,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Algum risco,1,0,1.0
+R0082,6,Escola Classe 104 de São Sebastião,53013484,Feminino,10.998,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0083,2,CED São Bartolomeu,53014880,Feminino,12.939,12–14 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0084,1,Escola Classe Dom Bosco,53068220,Feminino,10.5,10–11 anos,Vespertino,≥12 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0085,2,CED São Bartolomeu,53014880,Masculino,13.591,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0086,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.624,7–9 anos,Vespertino,≥12 anos,>2 SM,Brancos,,,,0.0
+R0087,1,Escola Classe Dom Bosco,53068220,Masculino,9.747,7–9 anos,Matutino,,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0088,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.866,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Algum risco,1,0,0.0
+R0089,1,Escola Classe Dom Bosco,53068220,Feminino,11.948,10–11 anos,Matutino,0–8 anos,,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0090,1,Escola Classe Dom Bosco,53068220,Masculino,9.588,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0091,2,CED São Bartolomeu,53014880,Masculino,12.83,12–14 anos,Vespertino,0–8 anos,,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0092,2,CED São Bartolomeu,53014880,Feminino,11.57,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Brancos,Algum risco,1,0,1.0
+R0093,2,CED São Bartolomeu,53014880,Feminino,11.959,10–11 anos,Vespertino,9–11 anos,,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0094,4,CEF Miguel Arcanjo,53068211,Feminino,14.385,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0095,1,Escola Classe Dom Bosco,53068220,Masculino,8.923,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0096,2,CED São Bartolomeu,53014880,Feminino,14.086,12–14 anos,Matutino,0–8 anos,1 a 2 SM,Outras raças/cores,Sem insegurança,0,0,0.0
+R0097,1,Escola Classe Dom Bosco,53068220,Feminino,8.783,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Outras raças/cores,Algum risco,1,0,1.0
+R0098,1,Escola Classe Dom Bosco,53068220,Feminino,9.325,7–9 anos,Matutino,≥12 anos,1 a 2 SM,Outras raças/cores,Sem insegurança,0,0,0.0
+R0099,6,Escola Classe 104 de São Sebastião,53013484,Feminino,9.265,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0100,7,Centro Educacional São José,53011988,Masculino,12.277,12–14 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0101,1,Escola Classe Dom Bosco,53068220,Masculino,8.0,7–9 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0102,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,11.0,10–11 anos,Vespertino,0–8 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0103,7,Centro Educacional São José,53011988,Masculino,14.686,12–14 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0104,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.967,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0105,5,Escola Classe São Bartolomeu,53012178,Feminino,9.123,7–9 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0106,1,Escola Classe Dom Bosco,53068220,Masculino,10.456,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0107,6,Escola Classe 104 de São Sebastião,53013484,Feminino,10.85,10–11 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0108,4,CEF Miguel Arcanjo,53068211,Masculino,12.969,12–14 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0109,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,7.721,7–9 anos,Matutino,0–8 anos,,Brancos,Risco moderado/grave,1,1,
+R0110,6,Escola Classe 104 de São Sebastião,53013484,Feminino,7.655,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0111,2,CED São Bartolomeu,53014880,Masculino,14.979,12–14 anos,Matutino,0–8 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0112,2,CED São Bartolomeu,53014880,Feminino,14.264,12–14 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0113,1,Escola Classe Dom Bosco,53068220,Feminino,9.114,7–9 anos,Vespertino,0–8 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0114,5,Escola Classe São Bartolomeu,53012178,Feminino,7.0,7–9 anos,Vespertino,≥12 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0115,6,Escola Classe 104 de São Sebastião,53013484,Feminino,11.332,10–11 anos,Matutino,≥12 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0116,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,8.676,7–9 anos,Matutino,0–8 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0117,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,8.939,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0118,2,CED São Bartolomeu,53014880,Masculino,12.515,12–14 anos,Vespertino,9–11 anos,1 a 2 SM,Brancos,Algum risco,1,0,0.0
+R0119,1,Escola Classe Dom Bosco,53068220,Feminino,10.853,10–11 anos,Matutino,≥12 anos,1 a 2 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0120,4,CEF Miguel Arcanjo,53068211,Feminino,12.86,12–14 anos,Matutino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0121,1,Escola Classe Dom Bosco,53068220,Feminino,9.572,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0122,6,Escola Classe 104 de São Sebastião,53013484,Feminino,10.149,10–11 anos,Vespertino,9–11 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0123,6,Escola Classe 104 de São Sebastião,53013484,Feminino,7.526,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0124,6,Escola Classe 104 de São Sebastião,53013484,Masculino,8.457,7–9 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,
+R0125,7,Centro Educacional São José,53011988,Masculino,14.305,12–14 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0126,2,CED São Bartolomeu,53014880,Feminino,15.097,15–17 anos,Matutino,9–11 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0127,6,Escola Classe 104 de São Sebastião,53013484,Feminino,10.628,10–11 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0128,6,Escola Classe 104 de São Sebastião,53013484,Feminino,10.522,10–11 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0129,2,CED São Bartolomeu,53014880,Feminino,15.444,15–17 anos,Matutino,,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0130,5,Escola Classe São Bartolomeu,53012178,Masculino,8.4,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0131,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,11.102,10–11 anos,Vespertino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0132,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,9.224,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0133,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.159,7–9 anos,Vespertino,9–11 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0134,1,Escola Classe Dom Bosco,53068220,Masculino,9.714,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0135,6,Escola Classe 104 de São Sebastião,53013484,Feminino,9.916,7–9 anos,Matutino,0–8 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0136,1,Escola Classe Dom Bosco,53068220,Masculino,10.0,10–11 anos,Vespertino,≥12 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0137,4,CEF Miguel Arcanjo,53068211,Feminino,13.0,12–14 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0138,2,CED São Bartolomeu,53014880,Masculino,12.005,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0139,2,CED São Bartolomeu,53014880,Feminino,12.123,12–14 anos,Vespertino,≥12 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0140,2,CED São Bartolomeu,53014880,Feminino,12.178,12–14 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0141,2,CED São Bartolomeu,53014880,Feminino,12.005,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0142,4,CEF Miguel Arcanjo,53068211,Feminino,14.727,12–14 anos,Matutino,9–11 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0143,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.646,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0144,2,CED São Bartolomeu,53014880,Feminino,,,Matutino,9–11 anos,,Brancos,Risco moderado/grave,1,1,0.0
+R0145,2,CED São Bartolomeu,53014880,Masculino,14.746,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0146,1,Escola Classe Dom Bosco,53068220,Masculino,10.409,10–11 anos,Matutino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0147,2,CED São Bartolomeu,53014880,Masculino,11.493,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0148,6,Escola Classe 104 de São Sebastião,53013484,Masculino,9.733,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0149,1,Escola Classe Dom Bosco,53068220,Masculino,9.366,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Outras raças/cores,Sem insegurança,0,0,1.0
+R0150,2,CED São Bartolomeu,53014880,Masculino,11.439,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0151,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.052,7–9 anos,Matutino,≥12 anos,Até 1 SM,,Sem insegurança,0,0,1.0
+R0152,1,Escola Classe Dom Bosco,53068220,Masculino,8.402,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0153,2,CED São Bartolomeu,53014880,Feminino,15.0,15–17 anos,Matutino,9–11 anos,1 a 2 SM,Outras raças/cores,Sem insegurança,0,0,0.0
+R0154,2,CED São Bartolomeu,53014880,Masculino,12.246,12–14 anos,Vespertino,≥12 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0155,2,CED São Bartolomeu,53014880,Feminino,15.0,15–17 anos,Matutino,0–8 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0156,2,CED São Bartolomeu,53014880,Feminino,13.005,12–14 anos,Vespertino,0–8 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0157,2,CED São Bartolomeu,53014880,Masculino,12.868,12–14 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0158,2,CED São Bartolomeu,53014880,Feminino,12.225,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0159,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,7.68,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0160,5,Escola Classe São Bartolomeu,53012178,Masculino,7.926,7–9 anos,Vespertino,0–8 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0161,4,CEF Miguel Arcanjo,53068211,Masculino,11.663,10–11 anos,Vespertino,0–8 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0162,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.277,7–9 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0163,1,Escola Classe Dom Bosco,53068220,Masculino,9.257,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0164,4,CEF Miguel Arcanjo,53068211,Masculino,13.692,12–14 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0165,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.471,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0166,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.168,10–11 anos,Matutino,9–11 anos,Até 1 SM,Brancos,Sem insegurança,0,0,0.0
+R0167,2,CED São Bartolomeu,53014880,Masculino,12.268,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Algum risco,1,0,1.0
+R0168,2,CED São Bartolomeu,53014880,Feminino,15.343,15–17 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0169,1,Escola Classe Dom Bosco,53068220,Masculino,8.353,7–9 anos,Vespertino,≥12 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,
+R0170,1,Escola Classe Dom Bosco,53068220,Masculino,9.062,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0171,1,Escola Classe Dom Bosco,53068220,Masculino,9.599,7–9 anos,Matutino,9–11 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0172,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.498,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0173,4,CEF Miguel Arcanjo,53068211,Feminino,12.515,12–14 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0174,4,CEF Miguel Arcanjo,53068211,Masculino,12.602,12–14 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0175,7,Centro Educacional São José,53011988,Feminino,11.723,10–11 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0176,4,CEF Miguel Arcanjo,53068211,Masculino,12.906,12–14 anos,Matutino,9–11 anos,>2 SM,Brancos,Sem insegurança,0,0,1.0
+R0177,2,CED São Bartolomeu,53014880,Masculino,12.033,12–14 anos,Vespertino,≥12 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0178,4,CEF Miguel Arcanjo,53068211,Feminino,11.562,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0179,2,CED São Bartolomeu,53014880,Masculino,11.458,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0180,2,CED São Bartolomeu,53014880,Masculino,14.776,12–14 anos,Matutino,9–11 anos,,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0181,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.627,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0182,1,Escola Classe Dom Bosco,53068220,Feminino,9.563,7–9 anos,Vespertino,≥12 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0183,1,Escola Classe Dom Bosco,53068220,Feminino,11.042,10–11 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0184,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.515,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0185,6,Escola Classe 104 de São Sebastião,53013484,Feminino,7.721,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0186,6,Escola Classe 104 de São Sebastião,53013484,Feminino,11.244,10–11 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0187,7,Centro Educacional São José,53011988,Masculino,12.824,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0188,1,Escola Classe Dom Bosco,53068220,Feminino,9.878,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Algum risco,1,0,0.0
+R0189,6,Escola Classe 104 de São Sebastião,53013484,Masculino,9.169,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0190,2,CED São Bartolomeu,53014880,Masculino,14.319,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0191,5,Escola Classe São Bartolomeu,53012178,Masculino,7.053,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0192,1,Escola Classe Dom Bosco,53068220,Feminino,10.765,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0193,6,Escola Classe 104 de São Sebastião,53013484,Masculino,9.317,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0194,2,CED São Bartolomeu,53014880,Masculino,13.7,12–14 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0195,4,CEF Miguel Arcanjo,53068211,Masculino,12.934,12–14 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0196,1,Escola Classe Dom Bosco,53068220,Feminino,11.0,10–11 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0197,7,Centro Educacional São José,53011988,Feminino,12.145,12–14 anos,Matutino,,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0198,7,Centro Educacional São José,53011988,Feminino,11.734,10–11 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0199,4,CEF Miguel Arcanjo,53068211,Feminino,12.857,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0200,1,Escola Classe Dom Bosco,53068220,Masculino,8.605,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0201,4,CEF Miguel Arcanjo,53068211,Feminino,15.65,15–17 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0202,4,CEF Miguel Arcanjo,53068211,Feminino,13.919,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,,,,1.0
+R0203,5,Escola Classe São Bartolomeu,53012178,Masculino,8.287,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0204,4,CEF Miguel Arcanjo,53068211,Masculino,12.906,12–14 anos,Matutino,9–11 anos,>2 SM,Outras raças/cores,Sem insegurança,0,0,0.0
+R0205,7,Centro Educacional São José,53011988,Feminino,12.235,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0206,4,CEF Miguel Arcanjo,53068211,Feminino,12.884,12–14 anos,Vespertino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0207,1,Escola Classe Dom Bosco,53068220,Feminino,9.467,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0208,1,Escola Classe Dom Bosco,53068220,Feminino,9.0,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0209,2,CED São Bartolomeu,53014880,Masculino,12.186,12–14 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0210,6,Escola Classe 104 de São Sebastião,53013484,Masculino,9.585,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0211,1,Escola Classe Dom Bosco,53068220,Feminino,9.58,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0212,6,Escola Classe 104 de São Sebastião,53013484,Feminino,11.214,10–11 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0213,2,CED São Bartolomeu,53014880,Feminino,14.861,12–14 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0214,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,7.507,7–9 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0215,5,Escola Classe São Bartolomeu,53012178,Masculino,8.413,7–9 anos,Vespertino,0–8 anos,,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0216,6,Escola Classe 104 de São Sebastião,53013484,Feminino,9.443,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0217,2,CED São Bartolomeu,53014880,Masculino,17.41,15–17 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0218,1,Escola Classe Dom Bosco,53068220,Feminino,10.04,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0219,5,Escola Classe São Bartolomeu,53012178,Feminino,8.548,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0220,7,Centro Educacional São José,53011988,Masculino,11.847,10–11 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0221,2,CED São Bartolomeu,53014880,Feminino,11.833,10–11 anos,Vespertino,0–8 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0222,4,CEF Miguel Arcanjo,53068211,Masculino,12.378,12–14 anos,Vespertino,0–8 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0223,1,Escola Classe Dom Bosco,53068220,Feminino,10.0,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Brancos,Algum risco,1,0,0.0
+R0224,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.958,7–9 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0225,2,CED São Bartolomeu,53014880,Feminino,11.332,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0226,4,CEF Miguel Arcanjo,53068211,Feminino,13.051,12–14 anos,Matutino,≥12 anos,Até 1 SM,Pardos/pretos,,,,1.0
+R0227,2,CED São Bartolomeu,53014880,Feminino,13.01,12–14 anos,Vespertino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0228,5,Escola Classe São Bartolomeu,53012178,Feminino,7.923,7–9 anos,Vespertino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0229,1,Escola Classe Dom Bosco,53068220,Masculino,10.697,10–11 anos,Matutino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0230,2,CED São Bartolomeu,53014880,Feminino,11.934,10–11 anos,Vespertino,0–8 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0231,1,Escola Classe Dom Bosco,53068220,Feminino,10.272,10–11 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0232,1,Escola Classe Dom Bosco,53068220,Feminino,9.314,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0233,2,CED São Bartolomeu,53014880,Masculino,11.789,10–11 anos,Vespertino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0234,6,Escola Classe 104 de São Sebastião,53013484,Masculino,7.767,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0235,1,Escola Classe Dom Bosco,53068220,Masculino,11.526,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0236,1,Escola Classe Dom Bosco,53068220,Feminino,11.619,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0237,1,Escola Classe Dom Bosco,53068220,Masculino,8.287,7–9 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0238,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,8.717,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0239,1,Escola Classe Dom Bosco,53068220,Masculino,11.619,10–11 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0240,5,Escola Classe São Bartolomeu,53012178,Masculino,9.131,7–9 anos,Matutino,≥12 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0241,2,CED São Bartolomeu,53014880,Feminino,12.983,12–14 anos,Vespertino,0–8 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0242,1,Escola Classe Dom Bosco,53068220,Masculino,10.086,10–11 anos,Vespertino,≥12 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0243,1,Escola Classe Dom Bosco,53068220,Feminino,10.168,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,
+R0244,6,Escola Classe 104 de São Sebastião,53013484,Masculino,8.545,7–9 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0245,2,CED São Bartolomeu,53014880,Feminino,12.107,12–14 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0246,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.723,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0247,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.598,10–11 anos,Matutino,0–8 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0248,4,CEF Miguel Arcanjo,53068211,Feminino,15.294,15–17 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0249,1,Escola Classe Dom Bosco,53068220,Feminino,9.955,7–9 anos,Matutino,0–8 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0250,1,Escola Classe Dom Bosco,53068220,Masculino,10.045,10–11 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0251,5,Escola Classe São Bartolomeu,53012178,Masculino,8.112,7–9 anos,Vespertino,9–11 anos,>2 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0252,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.496,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0253,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.615,10–11 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0254,2,CED São Bartolomeu,53014880,Masculino,13.018,12–14 anos,Vespertino,9–11 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0255,1,Escola Classe Dom Bosco,53068220,Feminino,10.114,10–11 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0256,6,Escola Classe 104 de São Sebastião,53013484,Feminino,9.0,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,,,,1.0
+R0257,7,Centro Educacional São José,53011988,Masculino,12.148,12–14 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0258,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.016,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0259,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,11.0,10–11 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0260,2,CED São Bartolomeu,53014880,Masculino,15.332,15–17 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0261,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,10.0,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0262,1,Escola Classe Dom Bosco,53068220,Feminino,9.489,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0263,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.631,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0264,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.839,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Outras raças/cores,Risco moderado/grave,1,1,0.0
+R0265,6,Escola Classe 104 de São Sebastião,53013484,Masculino,9.837,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0266,2,CED São Bartolomeu,53014880,Feminino,11.907,10–11 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0267,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,9.361,7–9 anos,Matutino,≥12 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0268,2,CED São Bartolomeu,53014880,Masculino,13.196,12–14 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0269,2,CED São Bartolomeu,53014880,Feminino,12.189,12–14 anos,Vespertino,0–8 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0270,7,Centro Educacional São José,53011988,Masculino,13.035,12–14 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0271,1,Escola Classe Dom Bosco,53068220,Feminino,8.605,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0272,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,9.372,7–9 anos,Matutino,9–11 anos,>2 SM,,Sem insegurança,0,0,0.0
+R0273,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.947,7–9 anos,Matutino,0–8 anos,Até 1 SM,Outras raças/cores,Risco moderado/grave,1,1,1.0
+R0274,1,Escola Classe Dom Bosco,53068220,Feminino,9.854,7–9 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0275,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.513,10–11 anos,Matutino,0–8 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0276,1,Escola Classe Dom Bosco,53068220,Feminino,9.484,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0277,1,Escola Classe Dom Bosco,53068220,Feminino,10.812,10–11 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0278,5,Escola Classe São Bartolomeu,53012178,Feminino,8.159,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,,,,1.0
+R0279,5,Escola Classe São Bartolomeu,53012178,Feminino,8.339,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0280,1,Escola Classe Dom Bosco,53068220,Masculino,10.122,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0281,1,Escola Classe Dom Bosco,53068220,Masculino,11.233,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0282,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,9.232,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0283,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,10.0,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0284,1,Escola Classe Dom Bosco,53068220,Feminino,11.619,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Sem insegurança,0,0,1.0
+R0285,1,Escola Classe Dom Bosco,53068220,Feminino,10.609,10–11 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0286,5,Escola Classe São Bartolomeu,53012178,Feminino,9.53,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0287,1,Escola Classe Dom Bosco,53068220,Masculino,8.375,7–9 anos,Vespertino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0288,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.852,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,
+R0289,1,Escola Classe Dom Bosco,53068220,Masculino,8.181,7–9 anos,Vespertino,≥12 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0290,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,8.35,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0291,1,Escola Classe Dom Bosco,53068220,Masculino,8.591,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0292,6,Escola Classe 104 de São Sebastião,53013484,Feminino,7.54,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0293,6,Escola Classe 104 de São Sebastião,53013484,Masculino,11.573,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0294,1,Escola Classe Dom Bosco,53068220,Masculino,9.7,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0295,1,Escola Classe Dom Bosco,53068220,Masculino,8.225,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0296,2,CED São Bartolomeu,53014880,Feminino,13.604,12–14 anos,Matutino,0–8 anos,,,,,,1.0
+R0297,7,Centro Educacional São José,53011988,Feminino,15.047,15–17 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0298,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,7.814,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0299,7,Centro Educacional São José,53011988,Feminino,11.504,10–11 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0300,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.6,7–9 anos,Matutino,≥12 anos,Até 1 SM,Outras raças/cores,Sem insegurança,0,0,1.0
+R0301,1,Escola Classe Dom Bosco,53068220,Masculino,8.682,7–9 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0302,1,Escola Classe Dom Bosco,53068220,Feminino,8.736,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0303,4,CEF Miguel Arcanjo,53068211,Feminino,14.45,12–14 anos,Vespertino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0304,5,Escola Classe São Bartolomeu,53012178,Feminino,8.0,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0305,1,Escola Classe Dom Bosco,53068220,Feminino,10.437,10–11 anos,Matutino,9–11 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0306,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.628,7–9 anos,Matutino,≥12 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,
+R0307,5,Escola Classe São Bartolomeu,53012178,Feminino,7.767,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0308,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.505,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0309,5,Escola Classe São Bartolomeu,53012178,Masculino,7.808,7–9 anos,Vespertino,0–8 anos,,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0310,2,CED São Bartolomeu,53014880,Feminino,12.214,12–14 anos,Vespertino,9–11 anos,1 a 2 SM,Brancos,Algum risco,1,0,0.0
+R0311,1,Escola Classe Dom Bosco,53068220,Masculino,9.741,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0312,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,9.361,7–9 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0313,7,Centro Educacional São José,53011988,Masculino,12.32,12–14 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,,,,0.0
+R0314,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.945,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0315,4,CEF Miguel Arcanjo,53068211,Masculino,11.362,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0316,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,9.0,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0317,6,Escola Classe 104 de São Sebastião,53013484,Masculino,8.849,7–9 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0318,2,CED São Bartolomeu,53014880,Masculino,13.755,12–14 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0319,6,Escola Classe 104 de São Sebastião,53013484,Masculino,11.389,10–11 anos,Matutino,0–8 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0320,4,CEF Miguel Arcanjo,53068211,Feminino,12.0,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Outras raças/cores,Algum risco,1,0,0.0
+R0321,5,Escola Classe São Bartolomeu,53012178,Masculino,8.578,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0322,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,8.504,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0323,4,CEF Miguel Arcanjo,53068211,Feminino,12.29,12–14 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0324,2,CED São Bartolomeu,53014880,Masculino,13.114,12–14 anos,Vespertino,Não soube informar,>2 SM,Pardos/pretos,,,,0.0
+R0325,7,Centro Educacional São José,53011988,Feminino,14.281,12–14 anos,Vespertino,≥12 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0326,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.914,7–9 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0327,6,Escola Classe 104 de São Sebastião,53013484,Masculino,10.007,10–11 anos,Vespertino,≥12 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0328,5,Escola Classe São Bartolomeu,53012178,Masculino,7.655,7–9 anos,Vespertino,≥12 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0329,1,Escola Classe Dom Bosco,53068220,Feminino,8.392,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0330,4,CEF Miguel Arcanjo,53068211,Feminino,12.805,12–14 anos,Matutino,≥12 anos,1 a 2 SM,Brancos,Algum risco,1,0,0.0
+R0331,2,CED São Bartolomeu,53014880,Feminino,14.0,12–14 anos,Matutino,Não soube informar,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0332,5,Escola Classe São Bartolomeu,53012178,Masculino,7.806,7–9 anos,Vespertino,0–8 anos,,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0333,6,Escola Classe 104 de São Sebastião,53013484,Feminino,11.198,10–11 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0334,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,8.682,7–9 anos,Matutino,,Até 1 SM,Pardos/pretos,,,,1.0
+R0335,4,CEF Miguel Arcanjo,53068211,Masculino,13.347,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0336,6,Escola Classe 104 de São Sebastião,53013484,Masculino,11.513,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0337,6,Escola Classe 104 de São Sebastião,53013484,Feminino,10.798,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Algum risco,1,0,1.0
+R0338,1,Escola Classe Dom Bosco,53068220,Feminino,10.138,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0339,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,9.0,7–9 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0340,2,CED São Bartolomeu,53014880,Masculino,12.912,12–14 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0341,7,Centro Educacional São José,53011988,Feminino,13.106,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0342,1,Escola Classe Dom Bosco,53068220,Feminino,8.638,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0343,6,Escola Classe 104 de São Sebastião,53013484,Masculino,7.515,7–9 anos,Matutino,9–11 anos,Até 1 SM,Brancos,,,,1.0
+R0344,2,CED São Bartolomeu,53014880,Feminino,12.022,12–14 anos,Vespertino,9–11 anos,>2 SM,Outras raças/cores,Sem insegurança,0,0,0.0
+R0345,4,CEF Miguel Arcanjo,53068211,Masculino,14.864,12–14 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0346,6,Escola Classe 104 de São Sebastião,53013484,Feminino,9.216,7–9 anos,Matutino,9–11 anos,Até 1 SM,Outras raças/cores,Risco moderado/grave,1,1,1.0
+R0347,2,CED São Bartolomeu,53014880,Masculino,11.496,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0348,1,Escola Classe Dom Bosco,53068220,Feminino,9.251,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0349,1,Escola Classe Dom Bosco,53068220,Masculino,9.758,7–9 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,,,,0.0
+R0350,6,Escola Classe 104 de São Sebastião,53013484,Feminino,11.173,10–11 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0351,7,Centro Educacional São José,53011988,Masculino,13.054,12–14 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0352,7,Centro Educacional São José,53011988,Masculino,13.265,12–14 anos,Matutino,≥12 anos,>2 SM,,Sem insegurança,0,0,0.0
+R0353,5,Escola Classe São Bartolomeu,53012178,Masculino,7.488,7–9 anos,Vespertino,≥12 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0354,5,Escola Classe São Bartolomeu,53012178,Feminino,7.51,7–9 anos,Vespertino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0355,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.512,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0356,6,Escola Classe 104 de São Sebastião,53013484,Masculino,8.405,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0357,6,Escola Classe 104 de São Sebastião,53013484,Masculino,8.334,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0358,1,Escola Classe Dom Bosco,53068220,Masculino,11.458,10–11 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0359,1,Escola Classe Dom Bosco,53068220,Masculino,11.003,10–11 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0360,4,CEF Miguel Arcanjo,53068211,Feminino,11.565,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0361,1,Escola Classe Dom Bosco,53068220,Masculino,9.101,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0362,1,Escola Classe Dom Bosco,53068220,Feminino,10.157,10–11 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0363,2,CED São Bartolomeu,53014880,Masculino,11.704,10–11 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0364,4,CEF Miguel Arcanjo,53068211,Masculino,11.529,10–11 anos,Vespertino,9–11 anos,>2 SM,Brancos,Algum risco,1,0,0.0
+R0365,1,Escola Classe Dom Bosco,53068220,Feminino,9.415,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0366,1,Escola Classe Dom Bosco,53068220,Masculino,9.002,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0367,6,Escola Classe 104 de São Sebastião,53013484,Feminino,9.498,7–9 anos,Vespertino,≥12 anos,,Brancos,,,,0.0
+R0368,2,CED São Bartolomeu,53014880,Feminino,12.808,12–14 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0369,4,CEF Miguel Arcanjo,53068211,Masculino,14.19,12–14 anos,Vespertino,0–8 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0370,1,Escola Classe Dom Bosco,53068220,Feminino,8.789,7–9 anos,Vespertino,≥12 anos,1 a 2 SM,Brancos,Algum risco,1,0,0.0
+R0371,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,10.0,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Outras raças/cores,Sem insegurança,0,0,0.0
+R0372,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,13.473,12–14 anos,,0–8 anos,,Brancos,Risco moderado/grave,1,1,1.0
+R0373,7,Centro Educacional São José,53011988,Masculino,12.068,12–14 anos,Matutino,9–11 anos,,Pardos/pretos,Sem insegurança,0,0,1.0
+R0374,5,Escola Classe São Bartolomeu,53012178,Feminino,9.155,7–9 anos,Matutino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0375,6,Escola Classe 104 de São Sebastião,53013484,Feminino,11.127,10–11 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0376,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,9.15,7–9 anos,Matutino,0–8 anos,,Brancos,Risco moderado/grave,1,1,1.0
+R0377,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,9.183,7–9 anos,Matutino,≥12 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0378,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.025,7–9 anos,Matutino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,
+R0379,4,CEF Miguel Arcanjo,53068211,Feminino,12.912,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0380,1,Escola Classe Dom Bosco,53068220,Feminino,9.799,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0381,1,Escola Classe Dom Bosco,53068220,Masculino,10.0,10–11 anos,Vespertino,≥12 anos,1 a 2 SM,Brancos,Algum risco,1,0,0.0
+R0382,1,Escola Classe Dom Bosco,53068220,Masculino,10.105,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0383,6,Escola Classe 104 de São Sebastião,53013484,Masculino,7.0,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0384,1,Escola Classe Dom Bosco,53068220,Masculino,10.363,10–11 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0385,6,Escola Classe 104 de São Sebastião,53013484,Feminino,7.992,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0386,2,CED São Bartolomeu,53014880,Masculino,12.422,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0387,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.679,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0388,6,Escola Classe 104 de São Sebastião,53013484,Masculino,8.821,7–9 anos,Matutino,≥12 anos,Até 1 SM,Outras raças/cores,Sem insegurança,0,0,1.0
+R0389,1,Escola Classe Dom Bosco,53068220,Feminino,10.062,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0390,1,Escola Classe Dom Bosco,53068220,Feminino,11.157,10–11 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0391,6,Escola Classe 104 de São Sebastião,53013484,Masculino,8.055,7–9 anos,Vespertino,≥12 anos,Até 1 SM,Brancos,Algum risco,1,0,1.0
+R0392,4,CEF Miguel Arcanjo,53068211,Feminino,13.295,12–14 anos,Vespertino,0–8 anos,>2 SM,Brancos,Algum risco,1,0,0.0
+R0393,1,Escola Classe Dom Bosco,53068220,Masculino,13.369,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0394,1,Escola Classe Dom Bosco,53068220,Masculino,9.993,7–9 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0395,2,CED São Bartolomeu,53014880,Masculino,15.201,15–17 anos,Matutino,Não soube informar,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0396,7,Centro Educacional São José,53011988,Masculino,12.736,12–14 anos,Matutino,0–8 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0397,1,Escola Classe Dom Bosco,53068220,Masculino,9.194,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0398,2,CED São Bartolomeu,53014880,Feminino,11.806,10–11 anos,Vespertino,9–11 anos,>2 SM,Brancos,Algum risco,1,0,0.0
+R0399,6,Escola Classe 104 de São Sebastião,53013484,Feminino,9.952,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0400,5,Escola Classe São Bartolomeu,53012178,Masculino,12.0,12–14 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0401,7,Centro Educacional São José,53011988,Feminino,12.208,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0402,2,CED São Bartolomeu,53014880,Feminino,12.235,12–14 anos,Vespertino,9–11 anos,1 a 2 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0403,6,Escola Classe 104 de São Sebastião,53013484,Feminino,8.572,7–9 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0404,1,Escola Classe Dom Bosco,53068220,Feminino,9.084,7–9 anos,Vespertino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0405,5,Escola Classe São Bartolomeu,53012178,Feminino,8.704,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0406,7,Centro Educacional São José,53011988,Masculino,14.88,12–14 anos,Vespertino,9–11 anos,1 a 2 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0407,2,CED São Bartolomeu,53014880,Feminino,12.156,12–14 anos,Vespertino,9–11 anos,>2 SM,Brancos,Sem insegurança,0,0,1.0
+R0408,1,Escola Classe Dom Bosco,53068220,Masculino,9.166,7–9 anos,Vespertino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0409,1,Escola Classe Dom Bosco,53068220,Masculino,9.906,7–9 anos,Matutino,0–8 anos,,Pardos/pretos,,,,1.0
+R0410,6,Escola Classe 104 de São Sebastião,53013484,Feminino,11.014,10–11 anos,Matutino,0–8 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0411,4,CEF Miguel Arcanjo,53068211,Feminino,12.81,12–14 anos,Matutino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0412,2,CED São Bartolomeu,53014880,Feminino,15.929,15–17 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0413,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.707,7–9 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0414,1,Escola Classe Dom Bosco,53068220,Masculino,10.245,10–11 anos,Matutino,0–8 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,0.0
+R0415,7,Centro Educacional São José,53011988,Feminino,14.031,12–14 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0416,4,CEF Miguel Arcanjo,53068211,Feminino,13.095,12–14 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0417,1,Escola Classe Dom Bosco,53068220,Feminino,9.248,7–9 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0418,7,Centro Educacional São José,53011988,Masculino,12.679,12–14 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0419,1,Escola Classe Dom Bosco,53068220,Masculino,9.24,7–9 anos,Vespertino,≥12 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0420,1,Escola Classe Dom Bosco,53068220,Masculino,9.311,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Algum risco,1,0,0.0
+R0421,7,Centro Educacional São José,53011988,Masculino,12.545,12–14 anos,Matutino,9–11 anos,,Brancos,,,,1.0
+R0422,1,Escola Classe Dom Bosco,53068220,Feminino,9.076,7–9 anos,Vespertino,0–8 anos,,Pardos/pretos,,,,0.0
+R0423,7,Centro Educacional São José,53011988,Masculino,11.368,10–11 anos,Vespertino,≥12 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0424,1,Escola Classe Dom Bosco,53068220,Masculino,10.672,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0425,1,Escola Classe Dom Bosco,53068220,Feminino,9.196,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0426,6,Escola Classe 104 de São Sebastião,53013484,Masculino,11.217,10–11 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0427,1,Escola Classe Dom Bosco,53068220,Feminino,9.782,7–9 anos,Matutino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0428,1,Escola Classe Dom Bosco,53068220,Feminino,9.996,7–9 anos,Vespertino,9–11 anos,,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0429,2,CED São Bartolomeu,53014880,Masculino,11.663,10–11 anos,Vespertino,Não soube informar,>2 SM,Brancos,Sem insegurança,0,0,1.0
+R0430,1,Escola Classe Dom Bosco,53068220,Masculino,8.364,7–9 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0431,1,Escola Classe Dom Bosco,53068220,Masculino,8.767,7–9 anos,Vespertino,0–8 anos,,Brancos,Risco moderado/grave,1,1,1.0
+R0432,6,Escola Classe 104 de São Sebastião,53013484,Masculino,8.468,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0433,2,CED São Bartolomeu,53014880,Masculino,12.838,12–14 anos,Vespertino,9–11 anos,>2 SM,Brancos,Sem insegurança,0,0,0.0
+R0434,4,CEF Miguel Arcanjo,53068211,Masculino,7.978,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,0.0
+R0435,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,8.323,7–9 anos,Matutino,0–8 anos,1 a 2 SM,Pardos/pretos,,,,1.0
+R0436,2,CED São Bartolomeu,53014880,Masculino,14.007,12–14 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0437,2,CED São Bartolomeu,53014880,Masculino,15.0,15–17 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0438,1,Escola Classe Dom Bosco,53068220,Masculino,9.309,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0439,1,Escola Classe Dom Bosco,53068220,Masculino,8.148,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0440,3,Escola Classe Cerâmica da Bênção,53009770,Masculino,7.696,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0441,2,CED São Bartolomeu,53014880,Feminino,12.824,12–14 anos,Vespertino,9–11 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0442,4,CEF Miguel Arcanjo,53068211,Feminino,12.756,12–14 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0443,5,Escola Classe São Bartolomeu,53012178,Feminino,9.429,7–9 anos,Matutino,0–8 anos,,Brancos,Sem insegurança,0,0,0.0
+R0444,6,Escola Classe 104 de São Sebastião,53013484,Feminino,10.678,10–11 anos,Vespertino,0–8 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0445,1,Escola Classe Dom Bosco,53068220,Feminino,9.944,7–9 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0446,7,Centro Educacional São José,53011988,Feminino,12.605,12–14 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,,,,1.0
+R0447,2,CED São Bartolomeu,53014880,Masculino,13.196,12–14 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0448,1,Escola Classe Dom Bosco,53068220,Feminino,11.105,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0449,5,Escola Classe São Bartolomeu,53012178,Feminino,9.476,7–9 anos,Matutino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0450,2,CED São Bartolomeu,53014880,Masculino,10.976,10–11 anos,Vespertino,≥12 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0451,2,CED São Bartolomeu,53014880,Feminino,15.795,15–17 anos,Matutino,0–8 anos,1 a 2 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0452,7,Centro Educacional São José,53011988,Feminino,13.248,12–14 anos,Matutino,Não soube informar,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0453,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,8.704,7–9 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0454,2,CED São Bartolomeu,53014880,Masculino,16.29,15–17 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,Sem insegurança,0,0,1.0
+R0455,7,Centro Educacional São José,53011988,Feminino,13.248,12–14 anos,Matutino,Não soube informar,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0456,4,CEF Miguel Arcanjo,53068211,Masculino,14.056,12–14 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0457,4,CEF Miguel Arcanjo,53068211,Feminino,13.268,12–14 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0458,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,9.867,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0459,2,CED São Bartolomeu,53014880,Masculino,13.432,12–14 anos,Matutino,9–11 anos,1 a 2 SM,Brancos,,,,0.0
+R0460,4,CEF Miguel Arcanjo,53068211,Feminino,12.611,12–14 anos,Vespertino,0–8 anos,1 a 2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0461,3,Escola Classe Cerâmica da Bênção,53009770,Feminino,7.463,7–9 anos,Matutino,≥12 anos,>2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0462,5,Escola Classe São Bartolomeu,53012178,Feminino,8.517,7–9 anos,Matutino,0–8 anos,1 a 2 SM,Brancos,Risco moderado/grave,1,1,0.0
+R0463,7,Centro Educacional São José,53011988,Masculino,14.322,12–14 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0464,6,Escola Classe 104 de São Sebastião,53013484,Feminino,9.287,7–9 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0465,1,Escola Classe Dom Bosco,53068220,Masculino,8.301,7–9 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0466,4,CEF Miguel Arcanjo,53068211,Masculino,12.0,12–14 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0467,4,CEF Miguel Arcanjo,53068211,Feminino,13.01,12–14 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0468,6,Escola Classe 104 de São Sebastião,53013484,Feminino,11.447,10–11 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,0.0
+R0469,7,Centro Educacional São José,53011988,Masculino,14.344,12–14 anos,Vespertino,9–11 anos,>2 SM,Pardos/pretos,Sem insegurança,0,0,0.0
+R0470,1,Escola Classe Dom Bosco,53068220,Feminino,11.521,10–11 anos,Matutino,9–11 anos,Até 1 SM,Outras raças/cores,Risco moderado/grave,1,1,1.0
+R0471,2,CED São Bartolomeu,53014880,Feminino,12.485,12–14 anos,Vespertino,Não soube informar,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0472,2,CED São Bartolomeu,53014880,Feminino,13.429,12–14 anos,Vespertino,9–11 anos,Até 1 SM,Outras raças/cores,Risco moderado/grave,1,1,0.0
+R0473,1,Escola Classe Dom Bosco,53068220,Feminino,10.494,10–11 anos,Vespertino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0474,7,Centro Educacional São José,53011988,Masculino,14.385,12–14 anos,Matutino,0–8 anos,1 a 2 SM,Brancos,Risco moderado/grave,1,1,1.0
+R0475,2,CED São Bartolomeu,53014880,Feminino,,,Matutino,0–8 anos,1 a 2 SM,Pardos/pretos,Algum risco,1,0,1.0
+R0476,7,Centro Educacional São José,53011988,Feminino,12.717,12–14 anos,Matutino,0–8 anos,Até 1 SM,Pardos/pretos,Sem insegurança,0,0,1.0
+R0477,2,CED São Bartolomeu,53014880,Feminino,13.5,12–14 anos,Vespertino,Não soube informar,Até 1 SM,Outras raças/cores,Sem insegurança,0,0,1.0
+R0478,5,Escola Classe São Bartolomeu,53012178,Feminino,8.734,7–9 anos,Matutino,9–11 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0479,1,Escola Classe Dom Bosco,53068220,Masculino,12.063,12–14 anos,Matutino,9–11 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0480,4,CEF Miguel Arcanjo,53068211,Masculino,12.329,12–14 anos,Matutino,0–8 anos,>2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0481,4,CEF Miguel Arcanjo,53068211,Feminino,15.08,15–17 anos,Vespertino,0–8 anos,Até 1 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
+R0482,6,Escola Classe 104 de São Sebastião,53013484,Feminino,10.713,10–11 anos,Matutino,≥12 anos,1 a 2 SM,Pardos/pretos,Risco moderado/grave,1,1,1.0
