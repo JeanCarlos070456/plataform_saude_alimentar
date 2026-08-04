@@ -1,32 +1,51 @@
 services:
   - type: web
-    name: caafe-inseguranca-dashboard
+    name: projeto-caafe
     runtime: python
     plan: free
-    buildCommand: ./build.sh
-    startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 120
-    healthCheckPath: /healthz/
-    autoDeploy: true
+
+    buildCommand: bash build.sh
+    startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120
+
     envVars:
       - key: PYTHON_VERSION
-        value: 3.13.5
+        value: 3.11.9
+
       - key: DJANGO_DEBUG
         value: "False"
+
       - key: DJANGO_SECRET_KEY
         generateValue: true
+
       - key: DJANGO_ALLOWED_HOSTS
-        value: .onrender.com
+        value: ".onrender.com"
+
+      - key: CSRF_TRUSTED_ORIGINS
+        value: "https://*.onrender.com"
+
       - key: SUPABASE_URL
         sync: false
+
       - key: SUPABASE_SERVICE_ROLE_KEY
         sync: false
+
       - key: SUPABASE_BUCKET
-        value: caafe-data
+        value: projeto_saude_alimentar
+
       - key: SUPABASE_OBJECT_PATH
-        value: analytics/caafe_dashboard.csv
+        value: data.csv
+
+      - key: SUPABASE_SCHOOLS_OBJECT_PATH
+        value: escolas.csv
+
       - key: CAAFE_REFRESH_SECONDS
         value: "3600"
+
+      - key: CAAFE_SCHOOLS_REFRESH_SECONDS
+        value: "86400"
+
       - key: CAAFE_MODEL_MODE
         value: validated
+
       - key: DATA_REFRESH_TOKEN
         generateValue: true
