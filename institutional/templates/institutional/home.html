@@ -210,9 +210,11 @@
             <div class="team-grid">
                 {% for group in team_groups %}
                 <article class="team-card">
+                    {% if group.image %}
                     <div class="team-image-wrap">
                         <img src="{% static group.image %}" alt="Arte de apresentação do grupo {{ group.title }}" loading="lazy">
                     </div>
+                    {% endif %}
                     <div class="team-card-copy">
                         <span>{{ group.subtitle }}</span>
                         <h3>{{ group.title }}</h3>

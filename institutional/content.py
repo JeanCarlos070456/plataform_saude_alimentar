@@ -133,7 +133,7 @@ TEAM_GROUPS = [
     {
         "title": "Graduandos",
         "subtitle": "Nutrição — UnB",
-        "image": "institutional/img/team/equipe-graduandos-3.webp",
+        "image": None,
         "members": ["Lívia", "Leonardo", "Anna Clara", "Layane"],
     },
 ]
