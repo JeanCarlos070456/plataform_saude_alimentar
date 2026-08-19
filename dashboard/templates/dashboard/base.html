@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0c6f4c">
-    <title>{% block title %}Projeto CAAFE | Insegurança Alimentar{% endblock %}</title>
+    <title>{% block title %}Nutri na Escola{% endblock %}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +25,8 @@
                 <img class="brand-logo" src="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}" alt="Logotipo do Projeto de Pesquisa">
             </div>
             <div class="brand-copy">
-                <strong>Projeto CAAFE</strong>
-                <span>Saúde alimentar escolar</span>
+                <strong>Projeto: Nutri na Escola</strong>
+                <span>Monitoramento do consumo alimentar, estado nutricional, atividade física e insegurança alimentar de escolares do Distrito Federal</span>
             </div>
             <button class="sidebar-close" type="button" data-sidebar-close aria-label="Fechar menu">
                 <span aria-hidden="true">×</span>
@@ -66,8 +66,8 @@
         </div>
 
         <div class="sidebar-footer">
-            <span>Base CAAFE</span>
-            <small>MVP 1.1 · resultados agregados</small>
+            <span>Projeto: Nutri na Escola</span>
+            <small>versão: 1.5.0</small>
         </div>
     </aside>
 
@@ -80,7 +80,7 @@
             </button>
             <div class="mobile-brand">
                 <img src="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}" alt="">
-                <strong>Projeto CAAFE</strong>
+                <strong>Projeto: Nutri na Escola</strong>
             </div>
             <span class="mobile-status" title="Dados carregados"></span>
         </header>
@@ -93,11 +93,11 @@
                         <span class="data-status"><i></i> Base carregada</span>
                     </div>
                     <h1>{% block heading %}Insegurança alimentar entre escolares{% endblock %}</h1>
-                    <p>Panorama analítico da prevalência e dos fatores sociodemográficos associados entre escolares participantes da Base CAAFE.</p>
+                    <p>Panorama analítico da prevalência e dos fatores sociodemográficos associados entre escolares participantes.</p>
                 </div>
                 <div class="source-card" title="Identificador da versão atual da fonte">
                     <span>Fonte dos dados</span>
-                    <strong>{{ data.source.type|capfirst }}</strong>
+
                     <small>Hash {{ data.source.hash }}</small>
                 </div>
             </section>
@@ -133,7 +133,7 @@
         </main>
 
         <footer class="app-footer">
-            <span>Projeto CAAFE · Painel de indicadores alimentares</span>
+            <span>Projeto: Nutri na Escola · Painel de indicadores alimentares</span>
             <small>Uso analítico e resultados agregados</small>
         </footer>
     </div>

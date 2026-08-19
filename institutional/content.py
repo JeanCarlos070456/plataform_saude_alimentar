@@ -77,8 +77,7 @@ METHOD_STEPS = [
         "number": "04",
         "title": "Aplicação do Web-CAAFE",
         "text": (
-            "Os estudantes respondem ao questionário digital em computadores ou "
-            "tablets, com apoio de imagens e recursos sonoros."
+            "É um sistema que monitora o estado nutricional, consumo alimentar e atividade física do dia anterior. Os estudantes respondem ao questionário digital em computadores ou tablets, com apoio de imagens e recursos sonoros."
         ),
     },
     {

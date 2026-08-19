@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0c6f4c">
     <meta name="description" content="Projeto de monitoramento do consumo alimentar, estado nutricional, atividade física e insegurança alimentar de escolares do Distrito Federal.">
-    <title>Projeto CAAFE | Saúde alimentar de escolares</title>
+    <title>Projeto: Nutri na Escola | Monitoramento do consumo alimentar, estado nutricional, atividade física e insegurança alimentar de escolares do Distrito Federal</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
         <a class="home-brand" href="#inicio" aria-label="Página inicial do Projeto CAAFE">
             <img src="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}" alt="">
             <span>
-                <strong>Projeto CAAFE</strong>
+                <strong>Projeto: Nutri na Escola</strong>
                 <small>Saúde alimentar de escolares</small>
             </span>
         </a>
@@ -38,7 +38,7 @@
             <a href="#metodologia">Como funciona</a>
             <a href="#equipe">Equipe</a>
             <a href="#vivencias">Vivências</a>
-            <a class="home-nav-cta" href="{% url 'tables' %}">Acessar base de dados</a>
+            <a class="home-nav-cta" href="{% url 'tables' %}">Acessar Sala de Situação:</a>
         </nav>
     </div>
 </header>
@@ -85,7 +85,6 @@
                 <article class="metric-card">
                     <span>Registros no banco</span>
                     <strong>{% if data_available %}{{ data.source.rows }}{% else %}—{% endif %}</strong>
-                    <small>linhas na fonte atual</small>
                 </article>
                 <article class="metric-card">
                     <span>Registros válidos</span>
@@ -95,7 +94,6 @@
                 <article class="metric-card metric-card-primary">
                     <span>Alguma insegurança</span>
                     <strong>{{ data.summary.prevalence_fmt }}</strong>
-                    <small>indicador operacional</small>
                 </article>
                 <article class="metric-card metric-card-alert">
                     <span>Moderada ou grave</span>
@@ -103,9 +101,9 @@
                     <small>duas respostas positivas</small>
                 </article>
                 <article class="metric-card">
-                    <span>Escolas na base</span>
+                    <span>Unidades</span>
                     <strong>{% if data_available %}{{ school_count }}{% else %}—{% endif %}</strong>
-                    <small>unidades com dados válidos</small>
+                    <small>escolas participantes</small>
                 </article>
             </div>
             <p class="metrics-note">Resultados preliminares. As estimativas podem ser atualizadas após a consolidação e qualificação definitiva do banco.</p>
@@ -117,12 +115,11 @@
             <div class="section-intro">
                 <span class="section-kicker">SOBRE O PROJETO</span>
                 <h2>Uma pesquisa conectada à realidade das escolas</h2>
-                <p>O Projeto CAAFE acompanha aspectos da alimentação, do crescimento, das atividades e das condições sociais de crianças e adolescentes matriculados em escolas públicas.</p>
+                <p>O projeto Nutri na Escola acompanha aspectos da alimentação, do crescimento, das atividades e das condições sociais de crianças e adolescentes matriculados em escolas públicas.</p>
             </div>
 
             <div class="about-copy">
-                <p>A infância e a adolescência são períodos decisivos para o crescimento, o desenvolvimento e a formação de hábitos que podem permanecer por toda a vida. Alimentação inadequada, sedentarismo, excesso de peso e insegurança alimentar podem afetar a saúde, o bem-estar e a qualidade de vida.</p>
-                <p>Ao reunir informações locais, a pesquisa contribui para que escolas, unidades de saúde, gestores, pesquisadores e comunidades compreendam melhor as necessidades dos estudantes e planejem ações de promoção da saúde.</p>
+                <p>O Projeto CAAFE acompanha aspectos da alimentação, do crescimento, da atividade física e das condições sociais de crianças e adolescentes matriculados em escolas públicas do 2º ao 9º anos do Ensino Fundamental</p>
                 <blockquote>Dados transformam realidades quando ajudam a orientar decisões, políticas públicas e ações de cuidado.</blockquote>
             </div>
         </div>
@@ -294,8 +291,8 @@
         <div class="footer-brand">
             <img src="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}" alt="">
             <div>
-                <strong>Projeto CAAFE</strong>
-                <span>Consumo alimentar, estado nutricional, atividade física e insegurança alimentar de escolares do Distrito Federal.</span>
+                <strong>Projeto: Nutri na Escola</strong>
+                <span>Monitoramento do consumo alimentar, estado nutricional, atividade física e insegurança alimentar de escolares do Distrito Federal</span>
             </div>
         </div>
         <div class="footer-links">
