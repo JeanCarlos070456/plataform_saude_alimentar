@@ -45,6 +45,70 @@
         }
     });
 
+    const carousel = document.querySelector('[data-hero-carousel]');
+    if (carousel) {
+        const slides = Array.from(carousel.querySelectorAll('[data-hero-slide]'));
+        const dots = Array.from(carousel.querySelectorAll('[data-hero-dot]'));
+        const previousButton = carousel.querySelector('[data-hero-prev]');
+        const nextButton = carousel.querySelector('[data-hero-next]');
+        const interval = Number(carousel.dataset.interval || 5000);
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let currentIndex = 0;
+        let timer = null;
+
+        const showSlide = (index) => {
+            if (!slides.length) return;
+            currentIndex = (index + slides.length) % slides.length;
+            slides.forEach((slide, position) => {
+                const active = position === currentIndex;
+                slide.classList.toggle('is-active', active);
+                slide.setAttribute('aria-hidden', String(!active));
+            });
+            dots.forEach((dot, position) => {
+                const active = position === currentIndex;
+                dot.classList.toggle('is-active', active);
+                dot.setAttribute('aria-current', String(active));
+            });
+        };
+
+        const stopAutoPlay = () => {
+            if (timer) window.clearInterval(timer);
+            timer = null;
+        };
+
+        const startAutoPlay = () => {
+            stopAutoPlay();
+            if (reduceMotion || slides.length <= 1) return;
+            timer = window.setInterval(() => showSlide(currentIndex + 1), interval);
+        };
+
+        previousButton?.addEventListener('click', () => {
+            showSlide(currentIndex - 1);
+            startAutoPlay();
+        });
+        nextButton?.addEventListener('click', () => {
+            showSlide(currentIndex + 1);
+            startAutoPlay();
+        });
+        dots.forEach((dot) => {
+            dot.addEventListener('click', () => {
+                showSlide(Number(dot.dataset.heroDot || 0));
+                startAutoPlay();
+            });
+        });
+        carousel.addEventListener('mouseenter', stopAutoPlay);
+        carousel.addEventListener('mouseleave', startAutoPlay);
+        carousel.addEventListener('focusin', stopAutoPlay);
+        carousel.addEventListener('focusout', startAutoPlay);
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) stopAutoPlay();
+            else startAutoPlay();
+        });
+
+        showSlide(0);
+        startAutoPlay();
+    }
+
     const year = document.querySelector('[data-current-year]');
     if (year) year.textContent = String(new Date().getFullYear());
 })();

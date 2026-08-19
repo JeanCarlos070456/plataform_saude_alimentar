@@ -1,0 +1,8 @@
+{% extends 'gestao/base.html' %}
+{% block title %}Gerenciador de acessos | Gestão{% endblock %}
+{% block content %}
+<div class="page-heading"><div><span class="eyebrow">USUÁRIOS</span><h1>Gerenciador de acessos</h1><p>Perfis cadastrados, situação do acesso e desligamentos administrativos.</p></div></div>
+<div class="panel table-panel"><div class="responsive-table"><table><thead><tr><th>Usuário</th><th>Perfil</th><th>Status</th><th>Último acesso</th><th>Ações</th></tr></thead><tbody>
+{% for row in rows %}<tr><td><strong>{{ row.user.get_full_name|default:row.user.username }}</strong><small>{{ row.user.email|default:row.user.username }}</small></td><td>{% if row.user == request.user %}<span class="badge published">{{ row.profile.get_role_display }}</span>{% else %}<form class="inline-form" method="post" action="{% url 'gestao:update_user_role' row.user.pk %}">{% csrf_token %}<select name="role">{% for value,label in role_choices %}<option value="{{ value }}" {% if row.profile.role == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select><button class="small-button" type="submit">Salvar</button></form>{% endif %}</td><td>{% if row.user.is_active %}<span class="badge published">Ativo</span>{% else %}<span class="badge archived">Inativo</span>{% endif %}</td><td>{{ row.user.last_login|date:'d/m/Y H:i'|default:'Nunca' }}</td><td>{% if row.user.is_active and row.user != request.user %}<a class="small-button danger button-link" href="{% url 'gestao:deactivate_user' row.user.pk %}">Solicitar desligamento</a>{% else %}—{% endif %}</td></tr>{% endfor %}
+</tbody></table></div></div>
+{% endblock %}

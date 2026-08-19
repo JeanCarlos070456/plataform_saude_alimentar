@@ -50,6 +50,50 @@ def prevalence_rows(df: pd.DataFrame, variable: str, outcome="any_insecurity") -
         rows.append({"category":category,"n":n,"cases":cases,"prevalence":pct,"prevalence_fmt":fmt_pct(pct),"ci_low":lo,"ci_high":hi,"ci_fmt":f"{fmt_num(lo,1)}–{fmt_num(hi,1)}"})
     return rows
 
+
+def age_prevalence_rows(df: pd.DataFrame, outcome="any_insecurity") -> list[dict]:
+    """
+    Estratificação etária usada apenas na tabela descritiva do painel.
+
+    Regra:
+    - 7 a 10 anos: 7 <= idade < 11
+    - ≥ 11 anos: idade >= 11
+
+    A variável original ``age_group`` permanece intacta e continua sendo usada
+    no modelo inferencial/associações, preservando o baseline validado.
+    """
+    valid = df[["age_years", outcome]].copy()
+    valid["age_years"] = pd.to_numeric(valid["age_years"], errors="coerce")
+    valid[outcome] = pd.to_numeric(valid[outcome], errors="coerce")
+    valid = valid.dropna(subset=["age_years", outcome])
+
+    groups = [
+        ("7 a 10 anos", (valid["age_years"] >= 7) & (valid["age_years"] < 11)),
+        ("≥ 11 anos", valid["age_years"] >= 11),
+    ]
+
+    rows = []
+    for category, mask in groups:
+        sub = valid.loc[mask]
+        n = len(sub)
+        cases = int(sub[outcome].sum()) if n else 0
+        pct = 100 * cases / n if n else np.nan
+        lo, hi = wilson(cases, n)
+
+        rows.append({
+            "category": category,
+            "n": n,
+            "cases": cases,
+            "prevalence": pct,
+            "prevalence_fmt": fmt_pct(pct),
+            "ci_low": lo,
+            "ci_high": hi,
+            "ci_fmt": f"{fmt_num(lo, 1)}–{fmt_num(hi, 1)}",
+        })
+
+    return rows
+
+
 def level_distribution(df):
     order=["Sem insegurança","Algum risco","Risco moderado/grave"]
     valid=df["insecurity_level"].dropna(); n=len(valid)
@@ -155,13 +199,19 @@ def school_summary(df):
 
 def build_payload(force=False):
     df,status=load_dataframe(force=force)
-    key=f"caafe-payload-{status.hash}"
+    key=f"caafe-payload-v2-{status.hash}"
     if not force and (saved:=cache.get(key)): return saved
     valid=df.dropna(subset=["any_insecurity"])
     n=len(valid); cases=int(valid["any_insecurity"].sum()); ms=int(valid["moderate_severe"].sum())
     lo,hi=wilson(cases,n); mslo,mshi=wilson(ms,n)
     associations,model_n=association_table(df)
-    tables={k:{"title":title,"rows":prevalence_rows(df,k)} for k,(title,_) in VARIABLES.items()}
+    tables = {
+        k: {
+            "title": title,
+            "rows": age_prevalence_rows(df) if k == "age_group" else prevalence_rows(df, k),
+        }
+        for k, (title, _) in VARIABLES.items()
+    }
     payload={
         "source":{"type":status.source,"hash":status.hash[:12],"rows":status.rows,"updated_at":status.updated_at},
         "summary":{"valid_n":n,"cases":cases,"prevalence":100*cases/n,"prevalence_fmt":fmt_pct(100*cases/n),

@@ -1,0 +1,48 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Gestão | Nutri na Escola{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}">
+    <link rel="stylesheet" href="{% static 'gestao/css/gestao.css' %}">
+    <script defer src="{% static 'gestao/js/gestao.js' %}"></script>
+</head>
+<body class="manager-body">
+<div class="manager-layout">
+    <aside class="manager-sidebar">
+        <a class="manager-brand" href="{% url 'gestao:dashboard' %}">
+            <img src="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}" alt="">
+            <span><strong>Nutri na Escola</strong><small>Gestão do site</small></span>
+        </a>
+        <nav>
+            <a href="{% url 'gestao:dashboard' %}">Visão geral</a>
+            <a href="{% url 'gestao:access_requests' %}">Solicitações de acesso</a>
+            <a href="{% url 'gestao:users' %}">Gerenciador de acessos</a>
+            <a href="{% url 'gestao:gallery_list' %}">Galeria de vivências</a>
+            <a href="{% url 'gestao:team_list' %}">Equipe de pesquisa</a>
+            <a href="{% url 'gestao:audit_list' %}">Auditoria</a>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="{% url 'institutional:home' %}" target="_blank" rel="noopener">Abrir site público ↗</a>
+            <a href="{% url 'tables' %}" target="_blank" rel="noopener">Sala de Situação ↗</a>
+            <form method="post" action="{% url 'gestao:logout' %}">{% csrf_token %}<button type="submit">Sair</button></form>
+        </div>
+    </aside>
+    <main class="manager-main">
+        <header class="manager-topbar">
+            <button class="sidebar-toggle" type="button" data-sidebar-toggle aria-label="Abrir menu">☰</button>
+            <div><strong>{{ request.user.get_full_name|default:request.user.email|default:request.user.username }}</strong><small>{{ request.user.email }}</small></div>
+        </header>
+        <div class="manager-content">
+            {% if messages %}<div class="message-stack">{% for message in messages %}<div class="message {{ message.tags }}">{{ message }}</div>{% endfor %}</div>{% endif %}
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+</div>
+</body>
+</html>

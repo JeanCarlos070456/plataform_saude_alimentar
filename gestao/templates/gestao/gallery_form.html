@@ -1,0 +1,8 @@
+{% extends 'gestao/base.html' %}
+{% block title %}{{ title }} | Gestão{% endblock %}
+{% block content %}
+<div class="page-heading"><div><span class="eyebrow">GALERIA</span><h1>{{ title }}</h1><p>As fotos novas são enviadas ao bucket público de mídia institucional. Até três publicações podem ficar em destaque no carrossel da Home.</p></div></div>
+<section class="panel form-panel"><form method="post" enctype="multipart/form-data" class="form-grid" novalidate>{% csrf_token %}
+{% for field in form %}<label class="{% if field.name == 'summary' %}full-width{% endif %}">{{ field.label }}{{ field }}{% if field.help_text %}<small>{{ field.help_text }}</small>{% endif %}{{ field.errors }}</label>{% endfor %}
+<div class="form-actions full-width"><a class="secondary-button button-link" href="{% url 'gestao:gallery_list' %}">Cancelar</a><button class="primary-button" type="submit">Salvar card</button></div></form></section>
+{% endblock %}

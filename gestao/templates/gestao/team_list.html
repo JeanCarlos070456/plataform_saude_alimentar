@@ -1,0 +1,8 @@
+{% extends 'gestao/base.html' %}
+{% block title %}Equipe de pesquisa | Gestão{% endblock %}
+{% block content %}
+<div class="page-heading actions-heading"><div><span class="eyebrow">EQUIPE</span><h1>Membros da equipe</h1><p>Cada integrante passa a possuir um card individual na Home.</p></div><a class="primary-button button-link" href="{% url 'gestao:team_create' %}">+ Novo membro</a></div>
+<div class="manage-card-grid team-manage-grid">
+{% for member in members %}<article class="manage-card"><div class="manage-card-media member-media">{% if member.photo_url %}<img src="{{ member.photo_url }}" alt="{{ member.full_name }}">{% else %}<div class="member-initials">{{ member.initials }}</div>{% endif %}</div><div class="manage-card-body"><span class="badge {{ member.status }}">{{ member.get_status_display }}</span><h2>{{ member.full_name }}</h2><strong class="role-line">{{ member.role }}</strong><p>{{ member.short_bio|default:'Apresentação ainda não cadastrada.'|truncatechars:150 }}</p><div class="card-actions"><a class="small-button button-link" href="{% url 'gestao:team_edit' member.pk %}">Editar</a><form method="post" action="{% url 'gestao:team_archive' member.pk %}">{% csrf_token %}<button class="small-button" type="submit">{% if member.status == 'archived' %}Publicar{% else %}Arquivar{% endif %}</button></form><form method="post" action="{% url 'gestao:team_delete' member.pk %}" data-confirm="Excluir este membro? A operação será registrada na auditoria.">{% csrf_token %}<button class="small-button danger" type="submit">Excluir</button></form></div></div></article>{% empty %}<p class="empty-state">Nenhum membro cadastrado.</p>{% endfor %}
+</div>
+{% endblock %}

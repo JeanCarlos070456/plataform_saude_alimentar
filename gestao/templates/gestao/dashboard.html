@@ -1,0 +1,19 @@
+{% extends 'gestao/base.html' %}
+{% block title %}Visão geral | Gestão{% endblock %}
+{% block content %}
+<div class="page-heading"><div><span class="eyebrow">PAINEL DE GESTÃO</span><h1>Visão geral</h1><p>Controle de acessos e conteúdos institucionais do projeto.</p></div></div>
+<div class="stats-grid">
+    <a class="stat-card" href="{% url 'gestao:access_requests' %}"><span>Solicitações pendentes</span><strong>{{ pending_requests }}</strong></a>
+    <a class="stat-card" href="{% url 'gestao:users' %}"><span>Usuários ativos</span><strong>{{ active_users }}</strong></a>
+    <a class="stat-card" href="{% url 'gestao:gallery_list' %}"><span>Vivências publicadas</span><strong>{{ published_gallery }}</strong></a>
+    <a class="stat-card" href="{% url 'gestao:team_list' %}"><span>Membros publicados</span><strong>{{ published_team }}</strong></a>
+</div>
+<div class="content-grid two-columns">
+    <section class="panel"><div class="panel-heading"><h2>Solicitações recentes</h2><a href="{% url 'gestao:access_requests' %}">Ver todas</a></div>
+        {% for item in recent_requests %}<div class="compact-row"><div><strong>{{ item.full_name }}</strong><small>{{ item.email }} · {{ item.role_description|default:'Vínculo não informado' }}</small></div><span class="badge pending">Pendente</span></div>{% empty %}<p class="empty-state">Nenhuma solicitação pendente.</p>{% endfor %}
+    </section>
+    <section class="panel"><div class="panel-heading"><h2>Atividade recente</h2><a href="{% url 'gestao:audit_list' %}">Auditoria</a></div>
+        {% for log in recent_audit %}<div class="compact-row"><div><strong>{{ log.action }}</strong><small>{{ log.object_repr|default:'—' }} · {{ log.created_at|date:'d/m/Y H:i' }}</small></div></div>{% empty %}<p class="empty-state">Ainda não há registros de auditoria.</p>{% endfor %}
+    </section>
+</div>
+{% endblock %}

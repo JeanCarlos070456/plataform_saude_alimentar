@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Acesso | Nutri na Escola{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}">
+    <link rel="stylesheet" href="{% static 'gestao/css/gestao.css' %}">
+</head>
+<body class="auth-body">
+    <main class="auth-shell">
+        <a class="auth-brand" href="{% url 'institutional:home' %}">
+            <img src="{% static 'institutional/img/logo/logo-caafe-simbolo.webp' %}" alt="">
+            <span><strong>Projeto: Nutri na Escola</strong><small>Área de acesso</small></span>
+        </a>
+        <section class="auth-card">
+            {% if messages %}
+            <div class="message-stack">{% for message in messages %}<div class="message {{ message.tags }}">{{ message }}</div>{% endfor %}</div>
+            {% endif %}
+            {% block content %}{% endblock %}
+        </section>
+        <a class="auth-back" href="{% url 'institutional:home' %}">← Voltar ao site</a>
+    </main>
+</body>
+</html>

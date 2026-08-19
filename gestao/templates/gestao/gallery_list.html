@@ -1,0 +1,45 @@
+{% extends 'gestao/base.html' %}
+{% load static %}
+{% block title %}Galeria de vivências | Gestão{% endblock %}
+{% block content %}
+<div class="page-heading actions-heading">
+    <div>
+        <span class="eyebrow">CONTEÚDO</span>
+        <h1>Galeria de Vivências</h1>
+        <p>Crie, edite, arquive ou exclua os cards exibidos na Home. No máximo três publicações podem ficar em destaque no carrossel.</p>
+    </div>
+    <a class="primary-button button-link" href="{% url 'gestao:gallery_create' %}">+ Nova vivência</a>
+</div>
+
+<div class="manage-card-grid">
+{% for item in items %}
+<article class="manage-card">
+    <div class="manage-card-media">
+        {% if item.image_url %}<img src="{{ item.image_url }}" alt="">
+        {% elif item.static_image %}<img src="{% static item.static_image %}" alt="">
+        {% else %}<div class="media-placeholder">Sem foto</div>{% endif %}
+        {% if item.is_featured %}<span class="featured-corner-badge">Destaque</span>{% endif %}
+    </div>
+    <div class="manage-card-body">
+        <div class="badge-row">
+            <span class="badge {{ item.status }}">{{ item.get_status_display }}</span>
+            {% if item.is_featured %}<span class="badge featured">Carrossel Home</span>{% endif %}
+        </div>
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.summary|truncatechars:150 }}</p>
+        <div class="card-actions">
+            <a class="small-button button-link" href="{% url 'gestao:gallery_edit' item.pk %}">Editar</a>
+            <form method="post" action="{% url 'gestao:gallery_archive' item.pk %}">{% csrf_token %}
+                <button class="small-button" type="submit">{% if item.status == 'archived' %}Publicar{% else %}Arquivar{% endif %}</button>
+            </form>
+            <form method="post" action="{% url 'gestao:gallery_delete' item.pk %}" data-confirm="Excluir este card? A operação será registrada na auditoria.">{% csrf_token %}
+                <button class="small-button danger" type="submit">Excluir</button>
+            </form>
+        </div>
+    </div>
+</article>
+{% empty %}
+<p class="empty-state">Nenhum card cadastrado.</p>
+{% endfor %}
+</div>
+{% endblock %}

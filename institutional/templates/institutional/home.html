@@ -38,7 +38,14 @@
             <a href="#metodologia">Como funciona</a>
             <a href="#equipe">Equipe</a>
             <a href="#vivencias">Vivências</a>
-            <a class="home-nav-cta" href="{% url 'tables' %}">Acessar Sala de Situação:</a>
+            {% if request.user.is_authenticated and can_manage_site %}
+            <a class="home-nav-login" href="{% url 'gestao:dashboard' %}">Gestão do site</a>
+            {% elif request.user.is_authenticated %}
+            <form class="home-nav-logout" method="post" action="{% url 'gestao:logout' %}">{% csrf_token %}<button type="submit">Sair</button></form>
+            {% else %}
+            <a class="home-nav-login" href="{% url 'gestao:login' %}">Login</a>
+            {% endif %}
+            <a class="home-nav-cta" href="{% url 'tables' %}">Acessar Sala de Situação</a>
         </nav>
     </div>
 </header>
@@ -64,9 +71,42 @@
                 </div>
             </div>
 
-            <div class="hero-visual" aria-label="Identidade visual oficial do projeto">
+            <div class="hero-visual" aria-label="Destaques da Galeria de Vivências">
                 <div class="hero-logo-halo"></div>
-                <img src="{% static 'institutional/img/logo/logo-caafe-oficial.webp' %}" alt="Projeto Consumo alimentar, Estado nutricional, Atividade física e Insegurança alimentar de escolares do Distrito Federal">
+                <div class="hero-carousel" data-hero-carousel data-interval="5000">
+                    <div class="hero-carousel-track">
+                        {% for slide in hero_slides %}
+                        <figure
+                            class="hero-carousel-slide{% if forloop.first %} is-active{% endif %}{% if slide.is_placeholder %} is-placeholder{% endif %}"
+                            data-hero-slide
+                            aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"
+                        >
+                            {% if slide.image_url %}
+                            <img src="{{ slide.image_url }}" alt="{{ slide.title }}">
+                            {% elif slide.static_image %}
+                            <img src="{% static slide.static_image %}" alt="{{ slide.title }}">
+                            {% else %}
+                            <img src="{% static 'institutional/img/logo/logo-caafe-oficial.webp' %}" alt="Identidade visual do Projeto Nutri na Escola">
+                            {% endif %}
+                        </figure>
+                        {% endfor %}
+                    </div>
+
+                    <button class="hero-carousel-control hero-carousel-prev" type="button" data-hero-prev aria-label="Imagem anterior">‹</button>
+                    <button class="hero-carousel-control hero-carousel-next" type="button" data-hero-next aria-label="Próxima imagem">›</button>
+
+                    <div class="hero-carousel-dots" aria-label="Selecionar imagem do carrossel">
+                        {% for slide in hero_slides %}
+                        <button
+                            type="button"
+                            class="hero-carousel-dot{% if forloop.first %} is-active{% endif %}"
+                            data-hero-dot="{{ forloop.counter0 }}"
+                            aria-label="Mostrar imagem {{ forloop.counter }}"
+                            aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+                        ></button>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -204,25 +244,26 @@
                 <p>Coordenação, residentes, bolsistas e estudantes atuam em diferentes etapas de campo, organização, análise e divulgação científica.</p>
             </div>
 
-            <div class="team-grid">
-                {% for group in team_groups %}
-                <article class="team-card">
-                    {% if group.image %}
-                    <div class="team-image-wrap">
-                        <img src="{% static group.image %}" alt="Arte de apresentação do grupo {{ group.title }}" loading="lazy">
+            <div class="team-grid team-grid-individual">
+                {% for member in team_members %}
+                <article class="team-card team-member-card">
+                    <div class="team-image-wrap team-member-image-wrap">
+                        {% if member.photo_url %}
+                        <img src="{{ member.photo_url }}" alt="{{ member.full_name }}" loading="lazy">
+                        {% else %}
+                        <div class="team-member-placeholder" aria-hidden="true">{{ member.initials }}</div>
+                        {% endif %}
                     </div>
-                    {% endif %}
                     <div class="team-card-copy">
-                        <span>{{ group.subtitle }}</span>
-                        <h3>{{ group.title }}</h3>
-                        <ul>
-                            {% for member in group.members %}<li>{{ member }}</li>{% endfor %}
-                        </ul>
+                        <span>{{ member.role }}</span>
+                        <h3>{{ member.full_name }}</h3>
+                        {% if member.short_bio %}<p>{{ member.short_bio }}</p>{% endif %}
+                        {% if member.lattes_url %}<a class="team-lattes-link" href="{{ member.lattes_url }}" target="_blank" rel="noopener noreferrer">Currículo Lattes ↗</a>{% endif %}
                     </div>
                 </article>
                 {% endfor %}
             </div>
-            <p class="team-note">A composição e as funções poderão ser atualizadas quando a lista institucional definitiva e as biografias forem consolidadas.</p>
+            <p class="team-note">Os perfis individuais podem ser atualizados pela equipe gestora do projeto.</p>
         </div>
     </section>
 
@@ -239,19 +280,29 @@
             <div class="gallery-grid">
                 {% for item in experiences %}
                 <article class="gallery-card">
-                    <button type="button" data-gallery-open data-image="{% static item.image %}" data-alt="{{ item.alt }}" data-title="{{ item.title }}" data-text="{{ item.text }}">
-                        <img src="{% static item.image %}" alt="{{ item.alt }}" loading="lazy">
+                    {% if item.image_url %}
+                    <button type="button" data-gallery-open data-image="{{ item.image_url }}" data-alt="{{ item.title }}" data-title="{{ item.title }}" data-text="{{ item.text }}">
+                        <img src="{{ item.image_url }}" alt="{{ item.title }}" loading="lazy">
                         <span class="gallery-overlay">Ampliar imagem</span>
                     </button>
+                    {% elif item.static_image %}
+                    <button type="button" data-gallery-open data-image="{% static item.static_image %}" data-alt="{{ item.title }}" data-title="{{ item.title }}" data-text="{{ item.text }}">
+                        <img src="{% static item.static_image %}" alt="{{ item.title }}" loading="lazy">
+                        <span class="gallery-overlay">Ampliar imagem</span>
+                    </button>
+                    {% else %}
+                    <div class="gallery-image-placeholder">Registro sem imagem</div>
+                    {% endif %}
                     <div class="gallery-copy">
-                        <span>{{ item.meta }}</span>
+                        {% if item.meta %}<span>{{ item.meta }}</span>{% endif %}
                         <h3>{{ item.title }}</h3>
                         <p>{{ item.text }}</p>
+                        {% if item.external_url %}<a class="gallery-external-link" href="{{ item.external_url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label|default:'Saiba mais' }} ↗</a>{% endif %}
                     </div>
                 </article>
                 {% endfor %}
             </div>
-            <p class="gallery-note">As legendas são iniciais e podem ser substituídas pelas informações oficiais de data, local, evento e crédito fotográfico.</p>
+            <p class="gallery-note">Os registros publicados podem ser atualizados e organizados pela equipe gestora do projeto.</p>
         </div>
     </section>
 

@@ -1,0 +1,8 @@
+{% extends 'gestao/auth_base.html' %}
+{% block title %}Solicitação enviada | Nutri na Escola{% endblock %}
+{% block content %}
+<span class="eyebrow">SOLICITAÇÃO REGISTRADA</span>
+<h1>Pedido enviado</h1>
+<p class="auth-lead">Sua solicitação foi registrada. Após a aprovação, você receberá por e-mail um link individual para cadastrar sua senha.</p>
+<a class="primary-button button-link" href="{% url 'institutional:home' %}">Voltar ao site</a>
+{% endblock %}

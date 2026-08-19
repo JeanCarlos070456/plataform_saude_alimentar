@@ -14,21 +14,17 @@
 </section>
 
 <div class="dashboard-grid">
-    <article class="content-card chart-card chart-card-wide">
-        <header class="card-header chart-header">
-            <div>
-                <span class="card-overline">MODELO AJUSTADO</span>
-                <h3>Razões de prevalência ajustadas</h3>
-                <p>Alguma insegurança alimentar · regressão de Poisson com variância robusta.</p>
-            </div>
-            <span class="chart-pill">RP = 1: ausência de diferença</span>
-        </header>
-        <div id="forest-chart" class="chart" role="img" aria-label="Gráfico de razões de prevalência ajustadas"></div>
-        <footer class="chart-footer">
-            <span class="chart-footer-dot accent"></span>
-            <p>Estimativas cujo intervalo não cruza a unidade indicam associação estatisticamente compatível com diferença de prevalência.</p>
-        </footer>
-    </article>
+    {# 
+       O modelo epidemiológico permanece disponível na camada analítica,
+       mas está oculto da interface pública inicial.
+       Mantemos o alvo técnico do Plotly fora da área visível para preservar
+       compatibilidade com o JavaScript atual sem expor o forest plot.
+    #}
+    <div
+        id="forest-chart"
+        aria-hidden="true"
+        style="position:absolute; left:-100000px; top:-100000px; width:1px; height:1px; overflow:hidden; visibility:hidden;"
+    ></div>
 
     <article class="content-card chart-card">
         <header class="card-header chart-header">

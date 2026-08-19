@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: projeto-caafe
+    name: saude-alimentar-unb
     runtime: python
     plan: free
 
@@ -10,42 +10,58 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
-
       - key: DJANGO_DEBUG
         value: "False"
-
       - key: DJANGO_SECRET_KEY
         generateValue: true
-
       - key: DJANGO_ALLOWED_HOSTS
-        value: ".onrender.com"
-
+        value: "saude-alimentar-unb.onrender.com,.onrender.com"
       - key: CSRF_TRUSTED_ORIGINS
-        value: "https://*.onrender.com"
+        value: "https://saude-alimentar-unb.onrender.com"
+      - key: SITE_BASE_URL
+        value: "https://saude-alimentar-unb.onrender.com"
 
+      # PostgreSQL persistente do Django
+      - key: DATABASE_URL
+        sync: false
+
+      # Supabase Storage
       - key: SUPABASE_URL
         sync: false
-
       - key: SUPABASE_SERVICE_ROLE_KEY
         sync: false
-
       - key: SUPABASE_BUCKET
         value: projeto_saude_alimentar
-
       - key: SUPABASE_OBJECT_PATH
         value: data.csv
-
       - key: SUPABASE_SCHOOLS_OBJECT_PATH
         value: escolas.csv
+      - key: SUPABASE_MEDIA_BUCKET
+        value: saude-alimentar-media
 
       - key: CAAFE_REFRESH_SECONDS
         value: "3600"
-
       - key: CAAFE_SCHOOLS_REFRESH_SECONDS
         value: "86400"
-
       - key: CAAFE_MODEL_MODE
         value: validated
-
       - key: DATA_REFRESH_TOKEN
         generateValue: true
+
+      # E-mail transacional
+      - key: EMAIL_HOST
+        sync: false
+      - key: EMAIL_PORT
+        value: "587"
+      - key: EMAIL_USE_TLS
+        value: "True"
+      - key: EMAIL_HOST_USER
+        sync: false
+      - key: EMAIL_HOST_PASSWORD
+        sync: false
+      - key: DEFAULT_FROM_EMAIL
+        sync: false
+
+      # Senha crítica: armazenar somente o hash gerado pelo Django
+      - key: GESTOR_CRITICAL_ACTION_SECRET_HASH
+        sync: false

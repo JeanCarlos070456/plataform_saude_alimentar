@@ -1,0 +1,11 @@
+{% extends 'gestao/base.html' %}
+{% block title %}Solicitações de acesso | Gestão{% endblock %}
+{% block content %}
+<div class="page-heading"><div><span class="eyebrow">ACESSOS</span><h1>Solicitações de acesso</h1><p>Aprove ou recuse pedidos de entrada no sistema.</p></div></div>
+<div class="filter-tabs"><a class="{% if selected_status == 'pending' %}active{% endif %}" href="?status=pending">Pendentes</a><a class="{% if selected_status == 'approved' %}active{% endif %}" href="?status=approved">Aprovadas</a><a class="{% if selected_status == 'rejected' %}active{% endif %}" href="?status=rejected">Recusadas</a><a class="{% if selected_status not in 'pending approved rejected' %}active{% endif %}" href="?status=all">Todas</a></div>
+<div class="panel table-panel"><div class="responsive-table"><table><thead><tr><th>Solicitante</th><th>Vínculo</th><th>Data</th><th>Status</th><th>Ações</th></tr></thead><tbody>
+{% for item in requests %}<tr><td><strong>{{ item.full_name }}</strong><small>{{ item.email }}</small></td><td>{{ item.role_description|default:'—' }}</td><td>{{ item.requested_at|date:'d/m/Y H:i' }}</td><td><span class="badge {{ item.status }}">{{ item.get_status_display }}</span></td><td class="actions-cell">
+{% if item.status == 'pending' %}<form method="post" action="{% url 'gestao:approve_request' item.pk %}">{% csrf_token %}<button class="small-button success" type="submit">Aprovar</button></form><form method="post" action="{% url 'gestao:reject_request' item.pk %}" data-confirm="Recusar esta solicitação?">{% csrf_token %}<button class="small-button danger" type="submit">Recusar</button></form>{% elif item.status == 'approved' %}<form method="post" action="{% url 'gestao:resend_invite' item.pk %}">{% csrf_token %}<button class="small-button" type="submit">Reenviar convite</button></form>{% else %}—{% endif %}
+</td></tr>{% empty %}<tr><td colspan="5" class="empty-cell">Nenhuma solicitação encontrada.</td></tr>{% endfor %}
+</tbody></table></div></div>
+{% endblock %}

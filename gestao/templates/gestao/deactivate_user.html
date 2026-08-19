@@ -1,0 +1,6 @@
+{% extends 'gestao/base.html' %}
+{% block title %}Desligar usuário | Gestão{% endblock %}
+{% block content %}
+<div class="page-heading"><div><span class="eyebrow">AÇÃO CRÍTICA</span><h1>Desligar usuário</h1><p>O acesso será desativado, mas o histórico será preservado.</p></div></div>
+<section class="panel narrow-panel"><h2>{{ target.get_full_name|default:target.username }}</h2><p>{{ target.email }}</p><form method="post" class="form-stack">{% csrf_token %}{% for field in form %}<label>{{ field.label }}{{ field }}{{ field.errors }}</label>{% endfor %}<div class="form-actions"><a class="secondary-button button-link" href="{% url 'gestao:users' %}">Cancelar</a><button class="danger-button" type="submit">Confirmar desligamento</button></div></form></section>
+{% endblock %}
